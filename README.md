@@ -3,6 +3,7 @@
 [![Version](https://badge.fury.io/gh/damnstupidsimple%2Fframework.svg)](https://badge.fury.io/gh/damnstupidsimple%2Fframework)
 [![Build](https://api.travis-ci.org/damnstupidsimple/framework.svg)](https://travis-ci.org/damnstupidsimple/framework)
 [![License](https://img.shields.io/:license-mit-blue.svg)](https://github.com/damnstupidsimple/framework/blob/master/LICENSE)
+![Made In](https://img.shields.io/badge/made%20in-Malaysia-red.svg)
 
 Damn Stupid Simple is a micro framework built for lazy developers. Suitable for those who used to develop vanilla projects, while following today's set of standard. The core is very small in size, yet it contains most of the functions required to rapidly start developing a project. The name itself is obvious.
 
@@ -69,11 +70,42 @@ Simply go to the [Releases page](https://github.com/damnstupidsimple/framework/r
 
 Basic Application
 ----
+```php
+<?php
+// All of the core classes are in this namespace
+namespace Core;
+
+// Define the root directory
+define('DSS_PATH', __DIR__ . '/');
+
+// Require Composer's fantastic autoloader to load 3rd party packages
+require_once(DSS_PATH.'app/autoloader.php');
+
+// Lazy routing
+Router::get('/(:any)', function() {
+	Viewer::file('home.php');
+});
+
+// Dispatch the router and done
+Router::dispatch();
+?>
+```
 
 [[back to top]](#table-of-contents)
 
 API Documentation
 ----
+Table of contents
+
+| No | Class         | Contents |
+|----|---------------|----------|
+| 1  | Core\Router   | <ul><li>[Basic Routing](#todo)</li><li>[Routing Parameters](#todo)</li></ul> |
+| 2  | Core\Viewer   | <ul><li>[Viewer](#todo)</li></ul>         |
+| 3  | Core\App      | <ul><li>[Linking a variable / object to the App Container](#todo)</li></ul>         |
+| 4  | Core\Sharer   | <ul><li>[Extracting data](#todo)</li></ul>         |
+| 5  | Core\Database | <ul><li>[Connecting to the database](#todo)</li><li>[Basic database queries](#todo)</li><li>[Pagination](#todo)</li><li>[Creating your models](#todo)</li></ul>         |
+| 6  | Core\Cache    | <ul><li>[Caching](#todo)</li></ul>         |
+| 7  | Core\Debugger | <ul><li>[Error handling](#todo)</li></ul>         |
 
 [[back to top]](#table-of-contents)
 
