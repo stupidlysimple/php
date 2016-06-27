@@ -19,16 +19,16 @@ Latest Version
 Release 0.1.0
 
 ### Table of Contents
-| No | Title                           |
-|----|---------------------------------|
-| 1  | [Why Damn Stupid Simple?](#Why-Damn-Stupid-Simple)  |
-| 2  | [Technical Features](#Technical-Features) |
-| 3  | [How to Install](#Installation)           |
-| 4  | [Basic Application](#Basic-Application)      |
-| 4  | [API Documentation](#todo)        |
+| No | Title                                              |
+|----|----------------------------------------------------|
+| 1  | [Why Damn Stupid Simple?](#Why-Damn-Stupid-Simple) |
+| 2  | [Technical Features](#technical-features)          |
+| 3  | [How to Install](#installation)                    |
+| 4  | [Basic Application](#basic-application)            |
+| 5  | [API Documentation](#api-documentation)            |
 
 
-Why Damn Stupid Simple 
+Why Damn Stupid Simple
 ----
   - No nonsense
   - Follow your own style
@@ -66,6 +66,9 @@ Simply go to the [Releases page](https://github.com/damnstupidsimple/framework/r
 Basic Application
 ----
 
+API Documentation
+----
+
 Development
 ----
 
@@ -73,5 +76,8 @@ Want to contribute? Great! Please do not hesitate to contribute to the framework
 
 License
 ----
-
 MIT
+
+Todo
+----
+This is a work in progress. The README.md will be expanded from time to time.
