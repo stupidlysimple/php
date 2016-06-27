@@ -99,8 +99,8 @@ Table of contents
 
 | No | Class         | Contents |
 |----|---------------|----------|
-| 1  | Core\Router   | <ul><li>[Basic Routing](https://github.com/damnstupidsimple/framework/wiki/Routing)</li><li>[Routing Parameters](https://github.com/damnstupidsimple/framework/wiki/Routing#routing-parameters)</li><li>[Route Controllers](https://github.com/damnstupidsimple/framework/wiki/Routing#route-controller)</li></ul> |
-| 2  | Core\Viewer   | <ul><li>[Viewer](#todo)</li></ul>         |
+| 1  | Core\Router   | <ul><li>[Basic Routing](https://github.com/damnstupidsimple/framework/wiki/Core%5CRouter)</li><li>[Routing Parameters](https://github.com/damnstupidsimple/framework/wiki/Core%5CRouter#routing-parameters)</li><li>[Route Controllers](https://github.com/damnstupidsimple/framework/wiki/Core%5CRouter#route-controller)</li></ul> |
+| 2  | Core\Viewer   | <ul><li>[Viewer](https://github.com/damnstupidsimple/framework/wiki/Core%5CViewer)</li></ul>         |
 | 3  | Core\App      | <ul><li>[Linking a variable / object to the App Container](#todo)</li></ul>         |
 | 4  | Core\Sharer   | <ul><li>[Extracting data](#todo)</li></ul>         |
 | 5  | Core\Database | <ul><li>[Connecting to the database](#todo)</li><li>[Basic database queries](#todo)</li><li>[Pagination](#todo)</li><li>[Creating your models](#todo)</li></ul>         |
