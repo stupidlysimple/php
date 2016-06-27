@@ -1,0 +1,33 @@
+{
+    "name": "damnstupidsimple/framework",
+    "description": "A simple framework for lazy developers",
+    "keywords": ["micro framework","lazy","damn stupid simple"],
+    "license": "MIT",
+    "type": "project",
+    "authors": [{
+    	"name": "Studio Nexus",
+    	"email": "fariz@studionexus.co",
+	"homepage": "https://www.studionexus.co",
+	"role": "Developer"
+    }],
+    "config": {
+    	"vendor-dir": "app/vendor"
+    },
+    "require": {
+    	"php": ">=5.4.0",
+    	"filp/whoops": "^2.1",
+    	"symfony/var-dumper": "^3.1",
+    	"phpFastCache/phpFastCache": "^4.3",
+    	"illuminate/database": "5.2.*",
+    	"illuminate/pagination": "5.2.*",
+		"phpunit/phpunit": "5.4.*"
+    },
+    "autoload": {
+      "psr-4": {
+          "Core\\": "app/Core"
+      },
+    	"classmap": [
+    		"app/Model"
+    	]
+    }
+}

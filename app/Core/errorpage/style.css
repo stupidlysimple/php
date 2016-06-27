@@ -1,0 +1,34 @@
+.dss_main {
+    padding: 18px;
+    width: 100%;
+}
+
+.dss_error {
+	    z-index: 2;
+	    max-width: 960px;
+	    min-width: 600px;
+	    margin: 0px auto;
+	    left: 0;
+	    right: 0;
+}
+
+.dss_error > h1 {
+  border: 1px solid #dadada;
+  overflow: hidden;
+  background: #f7f7f7;
+    font-size: 19px;
+    font-weight: 100;
+		margin: 0;
+		padding: 15px;
+		
+}
+
+.dss_error > p {
+    border: 1px solid #dadada;
+    overflow: hidden;
+    background: #fff;
+    font-weight: 100;
+    margin-top: 7px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
