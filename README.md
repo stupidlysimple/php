@@ -21,7 +21,7 @@ Release 0.1.0
 ### Table of Contents
 | No | Title                                              |
 |----|----------------------------------------------------|
-| 1  | [Why Damn Stupid Simple?](#Why-Damn-Stupid-Simple) |
+| 1  | [Why Damn Stupid Simple?](#why-damn-stupid-simple) |
 | 2  | [Technical Features](#technical-features)          |
 | 3  | [How to Install](#installation)                    |
 | 4  | [Basic Application](#basic-application)            |
@@ -36,9 +36,10 @@ Why Damn Stupid Simple
   - Small in size
   - Lightning fast (<20 ms)
 
+[[back to top]](#table-of-contents)
+
 Technical Features
 ----
-
   - **Lazy Routing** - Route urls according to file names. Your /home will be redirected to home.php and so on.
   - **Simple Templating Process** - Copy and paste any templates you downloaded to the root directory, and viola, it's up and ready. However, you can still manage template them however that suits your likings.
   - **Integrated with Composer** - Download thousands of packages available straight to your project.
@@ -46,9 +47,10 @@ Technical Features
   - **Dependency Injection** - Minimize coupling and dependant on a single project. And provides easy access to objects and variables.
   - **Out-of-the-Box Error Handler** - We integrated the framework with [Whoops](https://filp.github.io/whoops/), error handler in a less painful way.
 
+[[back to top]](#table-of-contents)
+
 Installation
 ----
-
 Damn Stupid Simple requires PHP >= 5.4 to run.
 
 ##### 1. Install via Composer; or
@@ -63,21 +65,32 @@ $ composer create-project damnstupidsimple/framework myproject
 ##### 2. Install via Zip/Tarball File:
 Simply go to the [Releases page](https://github.com/damnstupidsimple/framework/releases) to download .zip or .tar file for Damn Stupid Simple framework.
 
+[[back to top]](#table-of-contents)
+
 Basic Application
 ----
+
+[[back to top]](#table-of-contents)
 
 API Documentation
 ----
 
+[[back to top]](#table-of-contents)
+
 Development
 ----
-
 Want to contribute? Great! Please do not hesitate to contribute to the framework development.
+
+[[back to top]](#table-of-contents)
 
 License
 ----
 MIT
 
+[[back to top]](#table-of-contents)
+
 Todo
 ----
 This is a work in progress. The README.md will be expanded from time to time.
+
+[[back to top]](#table-of-contents)
