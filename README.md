@@ -41,7 +41,7 @@ Why Damn Stupid Simple
 
 Technical Features
 ----
-  - **Lazy Routing** - Route urls according to file names. Your /home will be redirected to home.php and so on.
+  - **Lazy Routing** - Route urls according to file names. Your /home will be redirected to home.php and so on. You can also route on specific uri, and/or forward them to a controller.
   - **Simple Templating Process** - Copy and paste any templates you downloaded to the root directory, and viola, it's up and ready. However, you can still manage template them however that suits your likings.
   - **Integrated with Composer** - Download thousands of packages available straight to your project.
   - **Integrated with Eloquent ORM** - Manage database records with no hassles. 
