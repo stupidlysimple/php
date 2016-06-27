@@ -2,6 +2,8 @@
 
 [![Version](https://badge.fury.io/gh/damnstupidsimple%2Fframework.svg)](https://badge.fury.io/gh/damnstupidsimple%2Fframework)
 [![Build](https://api.travis-ci.org/damnstupidsimple/framework.svg)](https://travis-ci.org/damnstupidsimple/framework)
+[![Total Downloads](https://poser.pugx.org/damnstupidsimple/framework/downloads)](https://packagist.org/packages/damnstupidsimple/framework)
+[![composer.lock](https://poser.pugx.org/damnstupidsimple/framework/composerlock)](https://packagist.org/packages/damnstupidsimple/framework)
 [![License](https://img.shields.io/:license-mit-blue.svg)](https://github.com/damnstupidsimple/framework/blob/master/LICENSE)
 ![Made In](https://img.shields.io/badge/made%20in-Malaysia-red.svg)
 
