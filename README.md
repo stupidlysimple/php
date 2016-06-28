@@ -54,7 +54,7 @@ Technical Features
 
 Installation
 ----
-Damn Stupid Simple requires PHP >= 5.4 to run.
+Damn Stupid Simple requires PHP at least 5.6 to run (with PHPUnit). 
 
 ##### 1. Install via Composer; or
 
