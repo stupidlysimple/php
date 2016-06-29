@@ -76,7 +76,7 @@ class Cache {
 			self::$config = require_once(DSS_PATH.'config/cache.php');
 		}
 		
-		if(self::$config['enabled'] == true){
+		if(self::$config['enabled'] === true){
 			CacheManager::setup(self::$config['settings']);
 			if(self::$CacheManager === null){
 				self::$CacheManager = CacheManager::getInstance();
