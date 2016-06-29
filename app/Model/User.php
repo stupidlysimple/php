@@ -1,11 +1,10 @@
 <?php
 
-namespace App;
+use Illuminate\Database\Eloquent\Model as Eloquent;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
-
-class User extends Authenticatable
+class User extends Eloquent
 {
+	protected $table = 'users';
     /**
      * The attributes that are mass assignable.
      *
