@@ -40,8 +40,9 @@ use Illuminate\Database\Capsule\Manager as Capsule;
  * Cache Manager instance
  *
  */
-class Database {
+class Database extends Capsule{
 	static private $config = null;
+	static private $capsule;
 	
 	/**
 	 * Create and return the instance of Illuminate\Database\Capsule\Manager 
@@ -55,6 +56,7 @@ class Database {
 	 * @since Method available since Release 0.1.0
 	 */
 	static function connect(){
+		
 		if(self::$config === null){
 			self::$config = include(DSS_PATH.'config/database.php');
 		}
@@ -64,7 +66,8 @@ class Database {
 			$capsule->addConnection(self::$config['settings']); 
 			$capsule->bootEloquent();
 			$capsule->setAsGlobal();
-			return $capsule;	
+			self::$capsule = $capsule;
+			return self::$capsule;	
 		}else{
 			return null;
 		}
