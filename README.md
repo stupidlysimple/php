@@ -104,8 +104,8 @@ Table of contents
 | 1  | Core\Router   | <ul><li>[Basic Routing](https://github.com/damnstupidsimple/framework/wiki/Core%5CRouter)</li><li>[Routing Parameters](https://github.com/damnstupidsimple/framework/wiki/Core%5CRouter#routing-parameters)</li><li>[Route Controllers](https://github.com/damnstupidsimple/framework/wiki/Core%5CRouter#route-controller)</li></ul> |
 | 2  | Core\Viewer   | <ul><li>[Viewer](https://github.com/damnstupidsimple/framework/wiki/Core%5CViewer)</li></ul>         |
 | 3  | Core\App      | <ul><li>[Linking a variable / object to the App Container](https://github.com/damnstupidsimple/framework/wiki/Core%5CApp)</li></ul>         |
-| 4  | Core\Sharer   | <ul><li>[Extracting data](#todo)</li></ul>         |
-| 5  | Core\Database | <ul><li>[Connecting to the database](#todo)</li><li>[Basic database queries](#todo)</li><li>[Pagination](#todo)</li><li>[Creating your models](#todo)</li></ul>         |
+| 4  | Core\Sharer   | <ul><li>[The Sharer](https://github.com/damnstupidsimple/framework/wiki/Core%5CSharer)</li><li>[Sharing and getting variables](https://github.com/damnstupidsimple/framework/wiki/Core%5CSharer#sharing-and-getting-variables)</li></ul>         |
+| 5  | Core\Database | <ul><li>[Configure the Database](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase)</li><li>[Basic database queries](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase#raw-queries)</li><li>[Query Builder](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase#query-builder)</li><li>[Selects](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase#selects)</li><li>[Joins](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase#joins)</li><li>[Models](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase#models)</li></ul>         |
 | 6  | Core\Cache    | <ul><li>[Caching](#todo)</li></ul>         |
 | 7  | Core\Debugger | <ul><li>[Error handling](#todo)</li></ul>         |
 
