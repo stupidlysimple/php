@@ -85,7 +85,7 @@ class Viewer {
 		extract ($data);
 		
 		// We don't want duplicated data
-		//unset($data);
+		unset($data);
 		
 		// Extract data retreived from the Sharer
 		if(Sharer::get() !== null){
