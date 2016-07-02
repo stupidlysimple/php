@@ -7,5 +7,5 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-		 bootstrap="app/Core/tests/bootstrap.php">
+		 bootstrap="vendor/damnstupidsimple/core/tests/bootstrap.php">
 </phpunit>

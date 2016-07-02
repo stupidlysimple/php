@@ -11,16 +11,18 @@
 	"role": "Developer"
     }],
     "config": {
-    	"vendor-dir": "app/vendor"
+    	"vendor-dir": "vendor"
     },
     "require": {
     	"php": ">=5.4.0",
     	"filp/whoops": "^2.1",
+        "damnstupidsimple/core": "0.*",
     	"symfony/var-dumper": "^3.1",
     	"phpFastCache/phpFastCache": "^4.3",
-    	"illuminate/database": "5.2.*",
-    	"illuminate/pagination": "5.2.*",
-		"phpunit/phpunit": "5.4.*"
+    	"illuminate/database": "5.2.*"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "5.4.*"
     },
     "autoload": {
       "psr-4": {

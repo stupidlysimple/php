@@ -19,7 +19,7 @@
 | the autoloader very well. Good guy Composer.
 |
 */
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
