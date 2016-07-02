@@ -58,6 +58,9 @@ Damn Stupid Simple requires PHP at least 5.6 to run (with PHPUnit).
 
 ##### 1. Install via Composer; or
 
+**Notice:** You can also follow this page for clearer instructions: 
+[damnstupidsimple.github.io](https://damnstupidsimple.github.io/how-to-install.html)
+
 If you do not have Composer installed, please follow [this link](https://getcomposer.org/doc/00-intro.md#using-the-installer) for Windows, or [this link](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable) for Mac Os X and Linux.
 
 As soon as you have installed the Composer already, type this on the Command Prompt (or Terminal)
