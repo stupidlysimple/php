@@ -1,5 +1,7 @@
 # Damn Stupid Simple PHP Framework
 
+[![Join the chat at https://gitter.im/damnstupidsimple/framework](https://badges.gitter.im/damnstupidsimple/framework.svg)](https://gitter.im/damnstupidsimple/framework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Version](https://badge.fury.io/gh/damnstupidsimple%2Fframework.svg)](https://badge.fury.io/gh/damnstupidsimple%2Fframework)
 [![Build](https://api.travis-ci.org/damnstupidsimple/framework.svg)](https://travis-ci.org/damnstupidsimple/framework)
 [![Total Downloads](https://poser.pugx.org/damnstupidsimple/framework/downloads)](https://packagist.org/packages/damnstupidsimple/framework)
