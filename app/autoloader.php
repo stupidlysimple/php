@@ -6,7 +6,7 @@
  * @author		Studio Nexus <fariz@studionexus.co>
  * @copyright	2016 Studio Nexus
  * @license		MIT
- * @version		Release: 0.1.0
+ * @version		Release: 0.1.1
  * @link		https://www.studionexus.co/php/damnstupidsimple
  */
 
@@ -31,7 +31,7 @@ require __DIR__ . '/../vendor/autoload.php';
 | function everywhere in the project.
 |
 */
-Core\Debugger::init_env();
+Core\Config::setEnv();
 
 /*
 |--------------------------------------------------------------------------

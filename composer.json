@@ -29,7 +29,8 @@
           "Core\\": "app/Core"
       },
     	"classmap": [
-    		"app/Model"
+    		"app/Model",
+            "app/Controller"
     	]
     }
 }

@@ -1,15 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="en">
 	<head>
+		<link rel="shortcut icon" href="favicon.ico">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta charset="utf-8">
 		<title>
 			Damn Stupid Simple Framework
 		</title>
-		<meta name="generator" content="Bootply">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="A basic template for Bootstrap 3.0">
 		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!--
+		You can also serve Bootstrap CSS from CDN
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		-->
 		<link href="css/styling.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
@@ -48,5 +52,13 @@
 				Powered by Damn Stupid Simple
 			</div>
 		</div>
+		<script type="javascript" src="js/bootstrap.min.js"></script>
+		<script type="javascript" src="js/jquery.min.js"></script>
+
+		<!--
+		You can also serve Bootstrap and jQuery from CDN
+		<script type="javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		-->
 	</body>
 </html>

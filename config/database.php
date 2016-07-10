@@ -4,7 +4,7 @@
  *
  * @package	Damn Stupid Simple
  * @author	Studio Nexus <fariz@studionexus.co>
- * @version	Release: 0.1.0
+ * @version	Release: 0.1.1
  * @link		https://www.studionexus.co/php/damnstupidsimple
  */
 
