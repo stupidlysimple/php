@@ -102,6 +102,8 @@ Router::dispatch();
 
 API Documentation
 ----
+If you wish to see the Core files, please go to <a href="https://github.com/damnstupidsimple/core">damnstupidsimple/core</a>
+
 Table of contents
 
 | No | Class         | Contents |
