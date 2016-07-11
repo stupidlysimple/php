@@ -1,7 +1,4 @@
 <?php
-use Core\Router;
-use Core\Viewer;
-
 /*
 |--------------------------------------------------------------------------
 | The Basic Routes - Route GET / into /home.php

@@ -9,7 +9,6 @@
  * @version		Release: 0.2.0
  * @link		https://www.studionexus.co/php/damnstupidsimple
  */
-include(DSS_PATH.'app/routes.php');
 
 /*
 |--------------------------------------------------------------------------
@@ -71,6 +70,7 @@ Core\Sharer::share('app', $app);
 | Ta Da! We can see something now!
 |
 */
+include(DSS_PATH.'app/routes.php');
 Core\Router::dispatch();
 
 /*
