@@ -3,7 +3,7 @@ namespace Controller;
 
 class Hello {
     public function greetWorld(){
-        echo 'Hello world';
+        echo ('Hello world');
     }
 
     public function greetWithName($name){

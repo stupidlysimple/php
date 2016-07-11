@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "damnstupidsimple/core",
-            "version": "v0.1.0",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/damnstupidsimple/core.git",
-                "reference": "74145f253061b966c3a2f7877ec4272d6099c989"
+                "reference": "b52984f0a4fc968f3d43053a9446468f47105fd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/damnstupidsimple/core/zipball/74145f253061b966c3a2f7877ec4272d6099c989",
-                "reference": "74145f253061b966c3a2f7877ec4272d6099c989",
+                "url": "https://api.github.com/repos/damnstupidsimple/core/zipball/b52984f0a4fc968f3d43053a9446468f47105fd6",
+                "reference": "b52984f0a4fc968f3d43053a9446468f47105fd6",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 "lazy",
                 "micro framework"
             ],
-            "time": "2016-07-02 17:38:47"
+            "time": "2016-07-10 12:41:01"
         },
         {
             "name": "doctrine/inflector",
