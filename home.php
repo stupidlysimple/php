@@ -1,3 +1,13 @@
+<?php
+//// Login credentials
+//$credentials = array(
+//	'email'    => 'admin@test.com',
+//	'password' => 'test',
+//);
+//
+//// Authenticate the user
+//$user = Sentry::authenticate($credentials, false);
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="en">
 	<head>
@@ -9,22 +19,27 @@
 		</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="A basic template for Bootstrap 3.0">
-		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		<!--
 		You can also serve Bootstrap CSS from CDN
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		-->
-		<link href="css/styling.css" rel="stylesheet" type="text/css">
+		<link href="resources/css/styling.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div class="navbar navbar-default navbar-static-top">
 			<div class="container">
 				<div class="navbar-header">
 					<h1 class="navbar-brand">
-						<a href="#">DSS</a>
+						<a href="#">
+							<img class="logo" src="resources/img/logo.png">
+							<span>DSS</span>
+						</a>
 					</h1>
 				</div>
-				<div class="navbar-top" style="height: 1px;">
+				<div class="navbar-top">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active">
 							<a href="#">Home</a>
@@ -52,8 +67,8 @@
 				Powered by Damn Stupid Simple
 			</div>
 		</div>
-		<script type="javascript" src="js/bootstrap.min.js"></script>
-		<script type="javascript" src="js/jquery.min.js"></script>
+		<script type="javascript" src="resources/js/bootstrap.min.js"></script>
+		<script type="javascript" src="resources/js/jquery.min.js"></script>
 
 		<!--
 		You can also serve Bootstrap and jQuery from CDN
