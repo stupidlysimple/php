@@ -67,7 +67,7 @@ If you do not have Composer installed, please follow [this link](https://getcomp
 
 As soon as you have installed the Composer already, type this on the Command Prompt (or Terminal)
 ```sh
-$ composer create-project damnstupidsimple/framework myproject --no-dev
+$ composer create-project damnstupidsimple/framework myproject
 ```
 
 ##### 2. Install via Zip/Tarball File:
