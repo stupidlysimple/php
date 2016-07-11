@@ -6,10 +6,20 @@
  * @author		Studio Nexus <fariz@studionexus.co>
  * @copyright	2016 Studio Nexus
  * @license		MIT
- * @version		Release: 0.1.1
+ * @version		Release: 0.2.0
  * @link		https://www.studionexus.co/php/damnstupidsimple
  */
 include(DSS_PATH.'app/routes.php');
+
+/*
+|--------------------------------------------------------------------------
+| Setup Aliases
+|--------------------------------------------------------------------------
+|
+| Reads the configuration file (config/aliases.php) and create aliases
+|
+*/
+Core\Alias::init();
 
 /*
 |--------------------------------------------------------------------------
@@ -73,5 +83,5 @@ Core\Router::dispatch();
 |
 */
 if(getenv('SHOW_EXECUTION_TIME')){
-	Core\Debugger::exec_time();	
+	Core\Debugger::exec_time();
 }

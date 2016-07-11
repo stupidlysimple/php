@@ -1,3 +1,13 @@
+<?php
+//// Login credentials
+//$credentials = array(
+//	'email'    => 'admin@test.com',
+//	'password' => 'test',
+//);
+//
+//// Authenticate the user
+//$user = Sentry::authenticate($credentials, false);
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="en">
 	<head>
@@ -29,7 +39,7 @@
 						</a>
 					</h1>
 				</div>
-				<div class="navbar-top" style="height: 1px;">
+				<div class="navbar-top">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active">
 							<a href="#">Home</a>
