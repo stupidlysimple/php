@@ -8,7 +8,7 @@
 | view files (home.php) into any directory within the project.
 |
 */
-Router::get('/', function() {
+Router::get('', function() {
 	Viewer::file('home.php');
 });
 
@@ -21,8 +21,8 @@ Router::get('/', function() {
 | Try to go to /hello or /hello/yourname and see what it shows
 |
 */
-Router::get('/hello', 'Controller\Hello@greetWorld');
-Router::get('/hello/(:any)', 'Controller\Hello@greetWithName');
+Router::get('hello', 'Controller\Hello@greetWorld');
+Router::get('hello/(:any)', 'Controller\Hello@greetWithName');
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +33,6 @@ Router::get('/hello/(:any)', 'Controller\Hello@greetWithName');
 | URI into any file.
 |
 */
-Router::get('/(:any)', function($match) {
+Router::get('(:any)', function($match) {
 	Viewer::file($match);
 });
