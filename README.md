@@ -21,7 +21,7 @@ Damn Stupid Simple is a micro framework built for lazy developers. Suitable for 
 
 Latest Version
 ----
-Release 0.1.0
+Release 0.2.0
 
 ### Table of Contents
 | No | Title                                              |
