@@ -9,7 +9,7 @@
 |
 */
 Router::get('', function() {
-	Viewer::file('home.php');
+	Viewer::file('views/home.php');
 });
 
 /*
@@ -23,6 +23,21 @@ Router::get('', function() {
 */
 Router::get('hello', 'Controller\Hello@greetWorld');
 Router::get('hello/(:any)', 'Controller\Hello@greetWithName');
+
+/*
+|--------------------------------------------------------------------------
+| Login Controller Demonstration
+|--------------------------------------------------------------------------
+|
+| This is to demonstrate using Controller to manage authentication
+|
+*/
+Router::get('login', 'Controller\Auth@displayLoginPage');
+Router::post('login', 'Controller\Auth@doAuthenticate');
+Router::get('register', 'Controller\Auth@displayRegisterPage');
+Router::post('register', 'Controller\Auth@doRegister');
+Router::get('logout', 'Controller\Auth@doLogout');
+Router::get('admin', 'Controller\Admin@displayAdminPage');
 
 /*
 |--------------------------------------------------------------------------

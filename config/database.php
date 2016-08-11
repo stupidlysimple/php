@@ -4,13 +4,13 @@
  *
  * @package	Damn Stupid Simple
  * @author	Studio Nexus <fariz@studionexus.co>
- * @version	Release: 0.1.1
+ * @version	Release: 0.3.0
  * @link		https://www.studionexus.co/php/damnstupidsimple
  */
 
 return 
 [
-  'enabled'   => false,
+  'enabled'   => true,
   'settings'  => 
   [
     'host'      => 'localhost',

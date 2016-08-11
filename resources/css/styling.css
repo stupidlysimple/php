@@ -71,6 +71,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+.tab-content {
+    border: 1px solid #ddd;
+    border-top: 0px;
+    margin-bottom: 5px;
+}
+
 h1 {
     font-weight: 100;
     letter-spacing: 4px;
