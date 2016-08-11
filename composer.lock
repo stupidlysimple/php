@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "85760edb09a4cfbd043aa38b41c7ce36",
-    "content-hash": "ebc48c44908afdef3ac4384bfd2d67f0",
+    "hash": "2820343fa41d57e8992337eed18f699f",
+    "content-hash": "62b1ad2c534f8f8be4b64a3ff3fe1590",
     "packages": [
         {
             "name": "cartalyst/sentry",
@@ -109,16 +109,16 @@
         },
         {
             "name": "damnstupidsimple/core",
-            "version": "v0.1.1",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/damnstupidsimple/core.git",
-                "reference": "b52984f0a4fc968f3d43053a9446468f47105fd6"
+                "reference": "9141eae0db6a54d03daafe38eed534bcd3fe5992"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/damnstupidsimple/core/zipball/b52984f0a4fc968f3d43053a9446468f47105fd6",
-                "reference": "b52984f0a4fc968f3d43053a9446468f47105fd6",
+                "url": "https://api.github.com/repos/damnstupidsimple/core/zipball/9141eae0db6a54d03daafe38eed534bcd3fe5992",
+                "reference": "9141eae0db6a54d03daafe38eed534bcd3fe5992",
                 "shasum": ""
             },
             "require": {
@@ -148,7 +148,7 @@
                 "lazy",
                 "micro framework"
             ],
-            "time": "2016-07-10 12:41:01"
+            "time": "2016-07-11 21:42:55"
         },
         {
             "name": "doctrine/inflector",

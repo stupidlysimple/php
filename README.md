@@ -21,7 +21,7 @@ Damn Stupid Simple is a micro framework built for lazy developers. Suitable for 
 
 Latest Version
 ----
-Release 0.1.0
+Release 0.2.0
 
 ### Table of Contents
 | No | Title                                              |
@@ -67,7 +67,7 @@ If you do not have Composer installed, please follow [this link](https://getcomp
 
 As soon as you have installed the Composer already, type this on the Command Prompt (or Terminal)
 ```sh
-$ C:\wamp64\www>composer create-project damnstupidsimple/framework myproject --no-dev
+$ composer create-project damnstupidsimple/framework myproject
 ```
 
 ##### 2. Install via Zip/Tarball File:
