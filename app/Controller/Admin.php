@@ -18,7 +18,7 @@ class Admin {
     }
 
     public function displayAdminPage(){
-        Viewer::file('/views/admin/home');
+        Viewer::file('/resources/views/admin/home');
     }
 
 }

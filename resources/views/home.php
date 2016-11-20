@@ -11,12 +11,12 @@
 		<meta name="description" content="A basic template for Bootstrap 3.0">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-		<link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="resources/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		<!--
 		You can also serve Bootstrap CSS from CDN
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		-->
-		<link href="resources/css/styling.css" rel="stylesheet" type="text/css">
+		<link href="resources/assets/css/styling.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div class="navbar navbar-default navbar-static-top">
@@ -24,7 +24,7 @@
 				<div class="navbar-header">
 					<h1 class="navbar-brand">
 						<a href="#">
-							<img class="logo" src="resources/img/logo.png">
+							<img class="logo" src="resources/assets/img/logo.png">
 							<span>DSS</span>
 						</a>
 					</h1>
@@ -57,8 +57,8 @@
 				Powered by Damn Stupid Simple
 			</div>
 		</div>
-		<script type="javascript" src="resources/js/bootstrap.min.js"></script>
-		<script type="javascript" src="resources/js/jquery.min.js"></script>
+		<script type="javascript" src="resources/assets/js/bootstrap.min.js"></script>
+		<script type="javascript" src="resources/assets/js/jquery.min.js"></script>
 
 		<!--
 		You can also serve Bootstrap and jQuery from CDN

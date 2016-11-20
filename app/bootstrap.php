@@ -70,7 +70,7 @@ Core\Sharer::share('app', $app);
 | Ta Da! We can see something now!
 |
 */
-include(DSS_PATH.'app/routes.php');
+Core\Router::start();
 Core\Router::dispatch();
 
 /*

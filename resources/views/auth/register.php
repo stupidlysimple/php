@@ -11,12 +11,12 @@
 		<meta name="description" content="A basic template for Bootstrap 3.0">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-		<link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="resources/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		<!--
 		You can also serve Bootstrap CSS from CDN
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		-->
-		<link href="resources/css/login.css" rel="stylesheet" type="text/css">
+		<link href="resources/assets/css/login.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		
@@ -24,12 +24,12 @@
 		    <article class="container-login center-block">
 				<section>
 					<ul id="top-bar" class="nav nav-tabs nav-justified">
-						<li class="active"><a href="#">Login</a></li>
-						<li><a href="register">Register</a></li>
+						<li><a href="login">Login</a></li>
+						<li class="active"><a href="#">Register</a></li>
 					</ul>
 					<div class="tab-content tabs-login col-lg-12 col-md-12 col-sm-12 cols-xs-12">
 						<div id="login-access" class="tab-pane fade active in">
-							<h2 class="logo"><img style="width:100px" src="resources/img/logo.png"></h2>						
+							<h2 class="logo"><img style="width:100px" src="resources/assets/img/logo.png"></h2>						
 							<form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal">
 								<div class="form-group ">
 									<label for="login" class="sr-only">Email</label>
@@ -58,8 +58,8 @@
 		</div>
 		<div class="clearfix" style="margin-bottom:10px"></div>
 			
-		<script type="javascript" src="resources/js/bootstrap.min.js"></script>
-		<script type="javascript" src="resources/js/jquery.min.js"></script>
+		<script type="javascript" src="resources/assets/js/bootstrap.min.js"></script>
+		<script type="javascript" src="resources/assets/js/jquery.min.js"></script>
 
 		<!--
 		You can also serve Bootstrap and jQuery from CDN

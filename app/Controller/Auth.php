@@ -10,11 +10,11 @@ class Auth {
     }
 
     public function displayRegisterPage(){
-        Viewer::file('views/auth/register');
+        Viewer::file('resources/views/auth/register');
     }
 
     public function displayLoginPage(){
-        Viewer::file('views/auth/login');
+        Viewer::file('resources/views/auth/login');
     }
 
     public function doAuthenticate(){
