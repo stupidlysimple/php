@@ -54,6 +54,10 @@ Technical Features
 
 [[back to top]](#table-of-contents)
 
+The MVC Structure
+----
+<img src="https://s28.postimg.org/6ts1zyh7x/DSS_MVC_Structure.png">
+
 Installation
 ----
 Damn Stupid Simple requires PHP at least 5.6 to run (with PHPUnit). 
