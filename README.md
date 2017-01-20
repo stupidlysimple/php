@@ -1,5 +1,7 @@
 # Damn Stupid Simple PHP Framework
 
+Follow us on Facebook [https://www.facebook.com/damnstupidsimple]
+
 [![Join the chat at https://gitter.im/damnstupidsimple/framework](https://badges.gitter.im/damnstupidsimple/framework.svg)](https://gitter.im/damnstupidsimple/framework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![Version](https://badge.fury.io/gh/damnstupidsimple%2Fframework.svg)](https://badge.fury.io/gh/damnstupidsimple%2Fframework)
@@ -21,7 +23,7 @@ Damn Stupid Simple is a micro framework built for lazy developers. Suitable for 
 
 Latest Version
 ----
-Release 0.2.0
+Release 0.3.0 (Release Notes)
 
 ### Table of Contents
 | No | Title                                              |
@@ -54,9 +56,15 @@ Technical Features
 
 [[back to top]](#table-of-contents)
 
+The MVC Structure
+----
+<img src="https://s28.postimg.org/6ts1zyh7x/DSS_MVC_Structure.png">
+
 Installation
 ----
 Damn Stupid Simple requires PHP at least 5.6 to run (with PHPUnit). 
+
+Tutorial for installation is available [[on our website]](https://damnstupidsimple.github.io/how-to-install.html).
 
 ##### 1. Install via Composer; or
 
@@ -102,21 +110,9 @@ Router::dispatch();
 
 API Documentation
 ----
-If you wish to see the Core files, please go to <a href="https://github.com/damnstupidsimple/core">damnstupidsimple/core</a>
+Documentations are available on [[the wiki page]](https://github.com/damnstupidsimple/framework/wiki).
 
-Table of contents
-
-| No | Class         | Contents |
-|----|---------------|----------|
-| 1  | Core\Router   | <ul><li>[Basic Routing](https://github.com/damnstupidsimple/framework/wiki/Core%5CRouter)</li><li>[Routing Parameters](https://github.com/damnstupidsimple/framework/wiki/Core%5CRouter#routing-parameters)</li><li>[Route Controllers](https://github.com/damnstupidsimple/framework/wiki/Core%5CRouter#route-controller)</li></ul> |
-| 2  | Core\Viewer   | <ul><li>[Viewer](https://github.com/damnstupidsimple/framework/wiki/Core%5CViewer)</li></ul>         |
-| 3  | Core\App      | <ul><li>[Linking a variable / object to the App Container](https://github.com/damnstupidsimple/framework/wiki/Core%5CApp)</li></ul>         |
-| 4  | Core\Sharer   | <ul><li>[The Sharer](https://github.com/damnstupidsimple/framework/wiki/Core%5CSharer)</li><li>[Sharing and getting variables](https://github.com/damnstupidsimple/framework/wiki/Core%5CSharer#sharing-and-getting-variables)</li></ul>         |
-| 5  | Core\Database | <ul><li>[Configure the Database](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase)</li><li>[Basic database queries](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase#raw-queries)</li><li>[Query Builder](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase#query-builder)</li><li>[Selects](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase#selects)</li><li>[Joins](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase#joins)</li><li>[Models](https://github.com/damnstupidsimple/framework/wiki/Core%5CDatabase#models)</li></ul>         |
-| 6  | Core\Cache    | <ul><li>[Caching](https://github.com/damnstupidsimple/framework/wiki/Core%5CCache)</li></ul>         |
-| 7  | Core\Debugger | <ul><li>[Error handling](https://github.com/damnstupidsimple/framework/wiki/Core%5CDebugger)</li></ul>         |
-
-[[back to top]](#table-of-contents)
+Note: If you wish to see the Core files, please go to <a href="https://github.com/damnstupidsimple/core">damnstupidsimple/core</a>
 
 Development
 ----

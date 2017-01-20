@@ -9,20 +9,8 @@
 |
 */
 Router::get('', function() {
-	Viewer::file('home.php');
+	Viewer::file('resources/views/home.php');
 });
-
-/*
-|--------------------------------------------------------------------------
-| Controller Demonstration
-|--------------------------------------------------------------------------
-|
-| This is to demonstrate using Controller with Damn Stupid Simple framework
-| Try to go to /hello or /hello/yourname and see what it shows
-|
-*/
-Router::get('hello', 'Controller\Hello@greetWorld');
-Router::get('hello/(:any)', 'Controller\Hello@greetWithName');
 
 /*
 |--------------------------------------------------------------------------
@@ -34,5 +22,16 @@ Router::get('hello/(:any)', 'Controller\Hello@greetWithName');
 |
 */
 Router::get('(:any)', function($match) {
-	Viewer::file($match);
+	Viewer::file('resources/views/' . $match);
 });
+
+/*
+|--------------------------------------------------------------------------
+| Basic Crud Demonstration
+|--------------------------------------------------------------------------
+|
+| This is to demonstrate posting form data and deleting into a controller
+|
+*/
+Router::post('updateuser', 'Controller\User@editUser');
+Router::get('deleteuser', 'Controller\User@deleteUser');

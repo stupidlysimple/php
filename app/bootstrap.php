@@ -6,7 +6,7 @@
  * @author		Studio Nexus <fariz@studionexus.co>
  * @copyright	2016 Studio Nexus
  * @license		MIT
- * @version		Release: 0.2.0
+ * @version		Release: 0.3.0
  * @link		https://www.studionexus.co/php/damnstupidsimple
  */
 
@@ -25,11 +25,15 @@ Core\Alias::init();
 | Creating the Singleton
 |--------------------------------------------------------------------------
 |
-| Damn Stupid Simple uses the Singleton to simplify coordinations, while
+| Damn Stupid Simple uses the Singleton to simplify coordination, while
 | maintaining only one instantiation of a class.
 |
 */
 $app = new Core\App;
+
+
+date_default_timezone_set ( 'Asia/Kuala_Lumpur' );
+
 
 /*
 |--------------------------------------------------------------------------
@@ -64,13 +68,26 @@ Core\Sharer::share('app', $app);
 
 /*
 |--------------------------------------------------------------------------
+| Load Services
+|--------------------------------------------------------------------------
+|
+| This is where all of your applications resides
+|
+*/
+$service = Core\Service::loadServices();
+
+Core\Sharer::share('service', $service);
+
+/*
+|--------------------------------------------------------------------------
 | Dispatch the Router
 |--------------------------------------------------------------------------
 |
 | Ta Da! We can see something now!
 |
 */
-include(DSS_PATH.'app/routes.php');
+
+Core\Router::start();
 Core\Router::dispatch();
 
 /*
@@ -83,5 +100,5 @@ Core\Router::dispatch();
 |
 */
 if(getenv('SHOW_EXECUTION_TIME')){
-	Core\Debugger::exec_time();
+    Core\Debugger::exec_time();
 }
