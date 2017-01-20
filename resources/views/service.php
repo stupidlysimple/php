@@ -31,10 +31,10 @@
 				</div>
 				<div class="navbar-top">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active">
+						<li>
 							<a href="home">Home</a>
 						</li>
-                        <li>
+                        <li class="active">
 							<a href="service">Services</a>
 						</li>
 						<li>
@@ -47,13 +47,55 @@
 		<div class="container">
 			<div class="text-center">
 				<h1>
-					Home
+					Service Demonstration
 				</h1>
 				<hr class="separator">
-				<p class="lead">
-					Fully baked micro-framework ready to be served
-				</p>
 			</div>
+            <p class="lead">
+                Service is where all of your written applications reside.
+            </p>
+            <p>
+                We have a couple of test functions to demonstrate how to use service in DSS:
+            </p>
+            <p>
+                1. A function that only returns a value <br>
+                <span class="code">echo $service->test->hello();</span><br>
+                Output: <?php echo $service->test->hello(); ?>
+            </p>
+            <br>
+            <p>
+                2. A function that calculate and returns a value <br>
+                <span class="code">echo $service->test->calculate(1,'+',2);</span><br>
+                Output: <?php echo $service->test->calculate(1,'+',2); ?>
+            </p>
+            <br>
+            <p>
+            Simply edit the file in the directory /config/service.php and link it with the file in /app/Service/YourAppName:
+            </p>
+            <p>
+                <pre class="code">
+/*
+|--------------------------------------------------------------------------
+| Services
+|--------------------------------------------------------------------------
+|
+| All of your applications will be mapped here, and can be accessible
+| with the $service object in your app.
+| 
+| e.g: $service->test->hello();
+|
+| 'the namespace' => 'the variable name for accessing your written applications'
+|
+*/
+
+return [
+    'Service\Test\TestService' => 'test'
+];
+                </pre>
+            </p>
+        <p>
+        That's it!
+        </p>
 		</div>
 		<div id="footer">
 			<div class="col-xs-12">

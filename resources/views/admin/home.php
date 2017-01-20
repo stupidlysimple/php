@@ -51,10 +51,25 @@
 					Admin Home
 				</h1>
 				<p>A very fresh start for the MVC framework with some basic CRUD functions</p>
+                
+                <?php
+                if(Core\Response::get('delete') === 'success'){
+                    echo '<p class="alert alert-success">User successfully deleted</p>';
+                }else if(Core\Response::get('edit') === 'success'){
+                    echo '<p class="alert alert-success">User successfully updated</p>';
+                }else if(Core\Response::get('delete') === 'failed'){
+                    echo '<p class="alert alert-danger">Failed to delete</p>';
+                }else if(Core\Response::get('edit') === 'failed'){
+                    echo '<p class="alert alert-danger">Failed to update</p>';
+                }
+                
+                ?>
+    
 				<ul class="nav nav-tabs" style="margin-top: 20px">
 					<li class="active"><a data-toggle="tab" href="#posts">Posts</a></li>
 					<li><a data-toggle="tab" href="#home">Profile</a></li>
 				</ul>
+                
 				<div class="tab-content">
 					<div id="posts" class="tab-pane fade in active">
 						<div style="max-width:600px; padding: 10px;">
@@ -63,40 +78,40 @@
 								<tr>
 									<th>Firstname</th>
 									<th>Lastname</th>
-									<th>Email</th>
+									<th>Username/Email</th>
+                                    <th>Actions</th>
 								</tr>
 								</thead>
 								<tbody>
-								<tr>
-									<td>John</td>
-									<td>Doe</td>
-									<td>john@example.com</td>
-								</tr>
-								<tr>
-									<td>Mary</td>
-									<td>Moe</td>
-									<td>mary@example.com</td>
-								</tr>
-								<tr>
-									<td>July</td>
-									<td>Dooley</td>
-									<td>july@example.com</td>
-								</tr>
+                                <?php
+                                    foreach($service->test->getRegisteredUsers() as $user){
+                                        echo '<tr>';
+                                        echo '<td>'.$user->first_name.'</td>';
+                                        echo '<td>'.$user->last_name.'</td>';
+                                        echo '<td>'.$user->email.'</td>';
+                                        echo '<td><a onclick="return confirm(\'Are you sure?\');" href="deleteuser?id='.$user->id.'" class="btn btn-danger">Delete</a></td>';
+                                        echo '</tr>';
+                                    }
+                                ?>
 								</tbody>
 							</table>
 						</div>
 					</div>
 					<div id="home" class="tab-pane fade">
 						<div style="max-width:400px; padding: 10px;">
-							<form method="POST" action="updateprofile">
+							<form method="POST" action="updateuser">
+                                <input type="hidden" name="id" value="<?= Sentry::getUser()->id; ?>">
 								<div class="form-group">
-									Email: <input value="<?= Sentry::getUser()->email; ?>" class="form-control input-sm">
+									First Name: <input name="first_name" value="<?= Sentry::getUser()->first_name; ?>" class="form-control input-sm">
+								</div>
+                                <div class="form-group">
+									Last Name: <input name="last_name" value="<?= Sentry::getUser()->last_name; ?>" class="form-control input-sm">
+								</div>
+                                <div class="form-group">
+									Email: <input name="email" value="<?= Sentry::getUser()->email; ?>" class="form-control input-sm">
 								</div>
 								<div class="form-group">
-									Name: <input value="<?= Sentry::getUser()->name; ?>" class="form-control input-sm">
-								</div>
-								<div class="form-group">
-									Password: <input value="" class="form-control input-sm">
+									Password: <input name="password" type="password" class="form-control input-sm">
 								</div>
 								<div class="form-group">
 									<button class="btn btn-success">Change details</button>

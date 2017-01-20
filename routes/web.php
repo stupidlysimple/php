@@ -24,3 +24,14 @@ Router::get('', function() {
 Router::get('(:any)', function($match) {
 	Viewer::file('resources/views/' . $match);
 });
+
+/*
+|--------------------------------------------------------------------------
+| Basic Crud Demonstration
+|--------------------------------------------------------------------------
+|
+| This is to demonstrate posting form data and deleting into a controller
+|
+*/
+Router::post('updateuser', 'Controller\User@editUser');
+Router::get('deleteuser', 'Controller\User@deleteUser');
