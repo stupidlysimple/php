@@ -58,7 +58,7 @@ Technical Features
 
 The MVC Structure
 ----
-<img src="https://s28.postimg.org/6ts1zyh7x/DSS_MVC_Structure.png">
+<img src="https://s30.postimg.org/59jbts6n5/DSS_MVC_Structure.jpg">
 
 Installation
 ----
