@@ -101,7 +101,7 @@ define('DSS_PATH', __DIR__ . '/');
 require_once(DSS_PATH.'app/autoloader.php');
 
 // Lazy routing
-Router::get('/(:any)', function() {
+Router::get('(:any)', function() {
 	Viewer::file('home.php');
 });
 
