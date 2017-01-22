@@ -22,6 +22,16 @@ Core\Alias::init();
 
 /*
 |--------------------------------------------------------------------------
+| Set the default timezone
+|--------------------------------------------------------------------------
+|
+| Reads the configuration file (config/datetime.php) and set timezone
+|
+*/
+TimeTrackr::init();
+
+/*
+|--------------------------------------------------------------------------
 | Creating the Singleton
 |--------------------------------------------------------------------------
 |
@@ -29,11 +39,7 @@ Core\Alias::init();
 | maintaining only one instantiation of a class.
 |
 */
-$app = new Core\App;
-
-
-date_default_timezone_set ( 'Asia/Kuala_Lumpur' );
-
+$app = new App;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,7 +49,7 @@ date_default_timezone_set ( 'Asia/Kuala_Lumpur' );
 | Connect the database for only once. Save the planet.
 |
 */
-$app->link('database', Core\Database::connect());
+$app->link('database', Database::connect());
 
 /*
 |--------------------------------------------------------------------------
@@ -54,29 +60,29 @@ $app->link('database', Core\Database::connect());
 | capabilities.
 |
 */
-$app->link('cachemanager', Core\Cache::init());
-
-/*
-|--------------------------------------------------------------------------
-| Share the Singleton $app with the Template Files
-|--------------------------------------------------------------------------
-|
-| Eliminate complexity, get the job done.
-|
-*/
-Core\Sharer::share('app', $app);
+$app->link('cachemanager', Cache::init());
 
 /*
 |--------------------------------------------------------------------------
 | Load Services
 |--------------------------------------------------------------------------
 |
-| This is where all of your applications resides
+| This is where all of your applications in /app/Service are loaded.
 |
 */
-$service = Core\Service::loadServices();
+$service = Service::loadServices();
 
-Core\Sharer::share('service', $service);
+/*
+|--------------------------------------------------------------------------
+| Share the Singleton $app and $service
+|--------------------------------------------------------------------------
+|
+| Eliminate complexity, get the job done. Our Dependency Injection (DI) is
+| here!
+|
+*/
+Sharer::share('app', $app);
+Sharer::share('service', $service);
 
 /*
 |--------------------------------------------------------------------------
@@ -87,8 +93,8 @@ Core\Sharer::share('service', $service);
 |
 */
 
-Core\Router::start();
-Core\Router::dispatch();
+Router::start();
+Router::dispatch();
 
 /*
 |--------------------------------------------------------------------------
@@ -100,5 +106,5 @@ Core\Router::dispatch();
 |
 */
 if(getenv('SHOW_EXECUTION_TIME')){
-    Core\Debugger::exec_time();
+    Debugger::exec_time();
 }

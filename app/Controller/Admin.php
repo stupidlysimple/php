@@ -2,8 +2,8 @@
 namespace Controller;
 
 use Sentry;
-use Core\Viewer;
-use Core\Response;
+use Viewer;
+use Response;
 
 class Admin {
 

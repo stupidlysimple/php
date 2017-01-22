@@ -8,10 +8,10 @@
  * @link		https://www.studionexus.co/php/damnstupidsimple
  */
 
-return 
+return
 [
   'enabled'   => true,
-  'settings'  => 
+  'settings'  =>
   [
     'host'      => 'localhost',
     'driver'    => 'mysql',

@@ -1,12 +1,12 @@
 <?php
 namespace Controller;
 use Sentry;
-use Core\Response;
-use Core\Viewer;
+use Response;
+use Viewer;
 
 class Auth {
     public function __construct(){
-        
+
     }
 
     public function displayRegisterPage(){
