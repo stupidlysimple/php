@@ -110,7 +110,7 @@ Router::dispatch();
 
 API Documentation
 ----
-Documentations are available on [[the wiki page]](https://github.com/damnstupidsimple/framework/wiki).
+Documentations are available on [the wiki page](https://github.com/damnstupidsimple/framework/wiki).
 
 Note: If you wish to see the Core files, please go to <a href="https://github.com/damnstupidsimple/core">damnstupidsimple/core</a>
 
