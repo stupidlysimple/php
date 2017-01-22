@@ -2,8 +2,8 @@
 namespace Controller;
 
 use Sentry;
-use Core\Viewer;
-use Core\Response;
+use Viewer;
+use Response;
 
 class User {
 
@@ -13,7 +13,7 @@ class User {
             Response::redirect('login');
         }
     }
-    
+
     public function editUser(){
         $id = Response::get('id');
         $first_name = Response::get('first_name');
@@ -71,20 +71,20 @@ class User {
     public function deleteUser()
     {
         $id = Response::get('id');
-        try 
+        try
         {
             $user = \Model\User::find($id);
-            
+
             if($user === null){
                 Response::redirect('admin?delete=failed');
             }
-            
+
             $user->delete();
         }catch(Exception $e)
         {
             Response::redirect('admin?delete=failed');
         }
-        
+
         Response::redirect('admin?delete=success');
     }
 }

@@ -1,13 +1,15 @@
 <?php
 namespace Service\Test;
 
-class TestService extends \Core\Service
+use ServiceContainer;
+
+class TestService extends ServiceContainer
 {
     public function hello()
     {
         return 'Hello';
     }
-    
+
     public function calculate(int $var1, $operation, int $var2)
     {
         if($operation == 'plus' || $operation == '+')
@@ -26,7 +28,7 @@ class TestService extends \Core\Service
             return 'Invalid Operation';
         }
     }
-    
+
     public function getRegisteredUsers()
     {
         return \Model\User::all();
