@@ -66,7 +66,7 @@ Damn Stupid Simple requires PHP at least 5.6 to run (with PHPUnit).
 
 Tutorial for installation is available [[on our website]](https://damnstupidsimple.github.io/how-to-install.html).
 
-##### 1. Install via Composer; or
+##### Install via Composer
 
 **Notice:** You can also follow this page for clearer instructions: 
 [damnstupidsimple.github.io](https://damnstupidsimple.github.io/how-to-install.html)
@@ -78,8 +78,12 @@ As soon as you have installed the Composer already, type this on the Command Pro
 $ composer create-project damnstupidsimple/framework myproject
 ```
 
-##### 2. Install via Zip/Tarball File:
-Simply go to the [Releases page](https://github.com/damnstupidsimple/framework/releases) to download .zip or .tar file for Damn Stupid Simple framework.
+or if you acquired the zip/tarball, issue this command on the Command Prompt (or Terminal)
+```sh
+$ composer update
+```
+
+Once the vendor file is created and all of the packages has been uploaded, you can now view the homepage and start programming. (Be sure to update the project always).
 
 [[back to top]](#table-of-contents)
 
