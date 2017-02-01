@@ -10,7 +10,7 @@ class TestService extends ServiceContainer
         return 'Hello';
     }
 
-    public function calculate(int $var1, $operation, int $var2)
+    public function calculate($var1, $operation, $var2)
     {
         if($operation == 'plus' || $operation == '+')
         {
