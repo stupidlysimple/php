@@ -1,4 +1,4 @@
-# Stupidly Simple Framework for PHP and HHVM
+# StupidlySimple Framework for PHP and HHVM
 
 Follow us on Facebook [https://www.facebook.com/stupidlysimple]
 
@@ -27,7 +27,7 @@ Release 0.3.2 (Release Notes)
 ### Table of Contents
 | No | Title                                              |
 |----|----------------------------------------------------|
-| 1  | [Why Stupidly Simple?](#why-damn-stupid-simple) |
+| 1  | [Why Stupidly Simple?](#why-stupidly-simple) |
 | 2  | [Technical Features](#technical-features)          |
 | 3  | [How to Install](#installation)                    |
 | 4  | [Basic Application](#basic-application)            |
