@@ -1,4 +1,4 @@
-# Damn Stupid Simple PHP Framework
+# Damn Stupid Simple (DSS) Framework for PHP and HHVM
 
 Follow us on Facebook [https://www.facebook.com/damnstupidsimple]
 
@@ -22,7 +22,7 @@ Damn Stupid Simple is a micro framework built for lazy developers. Suitable for 
 
 Latest Version
 ----
-Release 0.3.0 (Release Notes)
+Release 0.3.2 (Release Notes)
 
 ### Table of Contents
 | No | Title                                              |
