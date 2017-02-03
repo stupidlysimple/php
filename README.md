@@ -90,10 +90,10 @@ Basic Application
 namespace Core;
 
 // Define the root directory
-define('DSS_PATH', __DIR__ . '/');
+define('SS_PATH', __DIR__ . '/');
 
 // Require Composer's fantastic autoloader to load 3rd party packages
-require_once(DSS_PATH.'app/autoloader.php');
+require_once(SS_PATH.'app/autoloader.php');
 
 // Lazy routing
 Router::get('(:any)', function() {
