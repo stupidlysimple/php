@@ -1,23 +1,23 @@
-# Damn Stupid Simple (DSS) Framework for PHP and HHVM
+# Stupidly Simple Framework for PHP and HHVM
 
-Follow us on Facebook [https://www.facebook.com/damnstupidsimple]
+Follow us on Facebook [https://www.facebook.com/stupidlysimple]
 
-[![Join the chat at https://gitter.im/damnstupidsimple/framework](https://badges.gitter.im/damnstupidsimple/framework.svg)](https://gitter.im/damnstupidsimple/framework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/stupidlysimpleframework/Lobby](https://badges.gitter.im/stupidlysimple/framework.svg)](https://gitter.im/stupidlysimple/framework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![PHP version](https://badge.fury.io/ph/damnstupidsimple%2Fframework.svg)](https://badge.fury.io/ph/damnstupidsimple%2Fframework) [![Build](https://api.travis-ci.org/damnstupidsimple/framework.svg)](https://travis-ci.org/damnstupidsimple/framework)
-[![Total Downloads](https://poser.pugx.org/damnstupidsimple/framework/downloads)](https://packagist.org/packages/damnstupidsimple/framework)
-[![composer.lock](https://poser.pugx.org/damnstupidsimple/framework/composerlock)](https://packagist.org/packages/damnstupidsimple/framework)
-[![License](https://img.shields.io/:license-mit-blue.svg)](https://github.com/damnstupidsimple/framework/blob/master/LICENSE)
+[![PHP version](https://badge.fury.io/ph/stupidlysimple%2Fframework.svg)](https://badge.fury.io/ph/stupidlysimple%2Fframework) [![Build](https://api.travis-ci.org/stupidlysimple/framework.svg)](https://travis-ci.org/stupidlysimple/framework)
+[![Total Downloads](https://poser.pugx.org/stupidlysimple/framework/downloads)](https://packagist.org/packages/stupidlysimple/framework)
+[![composer.lock](https://poser.pugx.org/stupidlysimple/framework/composerlock)](https://packagist.org/packages/stupidlysimple/framework)
+[![License](https://img.shields.io/:license-mit-blue.svg)](https://github.com/stupidlysimple/framework/blob/master/LICENSE)
 [![Made In](https://img.shields.io/badge/made%20in-Malaysia-red.svg)](https://www.google.com/search?q=malaysia)
 
-Damn Stupid Simple is a micro framework built for lazy developers. Suitable for those who used to develop vanilla projects, while following today's set of standard. The core is very small in size, yet it contains most of the functions required to rapidly start developing a project. The name itself is obvious.
+Stupidly Simple Framework is a micro framework built for lazy developers. Suitable for those who used to develop vanilla projects, while following today's set of standard. The core is very small in size, yet it contains most of the functions required to rapidly start developing a project. The name itself is obvious.
 
 > New programmers have to take extra effort to learn 
 > everything about modern PHP frameworks like Laravel and Symphony. Most 
 > of the time were spent on documentations rather than the actual codes.
-> This leads to the development of Damn Stupid Simple, as the surface of
+> This leads to the development of Stupidly Simple, as the surface of
 > every terminologies, and the entry level to modern day needs. 
-> Damn Stupid Simple is hybrid, and it's all you need to start grasping
+> Stupidly Simple is hybrid, and it's all you need to start grasping
 > modern framework styles. It is everything you need to run from small to large-scale projects.
 
 Latest Version
@@ -27,14 +27,14 @@ Release 0.3.2 (Release Notes)
 ### Table of Contents
 | No | Title                                              |
 |----|----------------------------------------------------|
-| 1  | [Why Damn Stupid Simple?](#why-damn-stupid-simple) |
+| 1  | [Why Stupidly Simple?](#why-damn-stupid-simple) |
 | 2  | [Technical Features](#technical-features)          |
 | 3  | [How to Install](#installation)                    |
 | 4  | [Basic Application](#basic-application)            |
 | 5  | [API Documentation](#api-documentation)            |
 
 
-Why Damn Stupid Simple
+Why Stupidly Simple
 ----
   - No nonsense
   - Follow your own style
@@ -61,20 +61,20 @@ The MVC Structure
 
 Installation
 ----
-Damn Stupid Simple requires PHP at least 5.6 to run (with PHPUnit). 
+Stupidly Simple requires PHP at least 5.6 to run (with PHPUnit). 
 
-Tutorial for installation is available [[on our website]](https://damnstupidsimple.github.io/how-to-install.html).
+Tutorial for installation is available [[on our website]](https://stupidlysimple.github.io/how-to-install.html).
 
 ##### Install via Composer
 
 **Notice:** You can also follow this page for clearer instructions: 
-[damnstupidsimple.github.io](https://damnstupidsimple.github.io/how-to-install.html)
+[stupidlysimple.github.io](https://stupidlysimple.github.io/how-to-install.html)
 
 If you do not have Composer installed, please follow [this link](https://getcomposer.org/doc/00-intro.md#using-the-installer) for Windows, or [this link](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable) for Mac Os X and Linux.
 
 As soon as you have installed the Composer already, type this on the Command Prompt (or Terminal)
 ```sh
-$ composer create-project damnstupidsimple/framework myproject
+$ composer create-project stupidlysimple/framework myproject
 ```
 
 or if you acquired the zip/tarball, issue this command on the Command Prompt (or Terminal)
@@ -113,9 +113,9 @@ Router::dispatch();
 
 API Documentation
 ----
-Documentations are available on [the wiki page](https://github.com/damnstupidsimple/framework/wiki).
+Documentations are available on [the wiki page](https://github.com/stupidlysimple/framework/wiki).
 
-Note: If you wish to see the Core files, please go to <a href="https://github.com/damnstupidsimple/core">damnstupidsimple/core</a>
+Note: If you wish to see the Core files, please go to <a href="https://github.com/stupidlysimple/core">stupidlysimple/core</a>
 
 Development
 ----
