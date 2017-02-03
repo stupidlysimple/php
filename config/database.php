@@ -1,13 +1,13 @@
 <?php
 /**
- * Damn Stupid Simple - A PHP Framework For Lazy Developers
+ * StupidlySimple - A PHP Framework For Lazy Developers
  *
- * @package	Damn Stupid Simple
- * @author	Studio Nexus <fariz@studionexus.co>
- * @version	Release: 0.3.0
- * @link		https://www.studionexus.co/php/damnstupidsimple
+ * @package		StupidlySimple
+ * @author		Fariz Luqman <fariz.fnb@gmail.com>
+ * @copyright	2017 Fariz Luqman
+ * @license		MIT
+ * @link		https://stupidlysimple.github.io/
  */
-
 return
 [
   'enabled'   => true,
@@ -15,7 +15,7 @@ return
   [
     'host'      => 'localhost',
     'driver'    => 'mysql',
-    'database'  => 'dss',
+    'database'  => 'stupidlysimple',
     'username'  => 'root',
     'password'  => 'root',
     'charset'   => 'utf8',

@@ -1,6 +1,6 @@
 # StupidlySimple Framework for PHP and HHVM
 
-Follow us on Facebook [https://www.facebook.com/stupidlysimple]
+Follow us on Facebook [https://www.facebook.com/stupidlysimpleframework]
 
 [![Join the chat at https://gitter.im/stupidlysimpleframework/Lobby](https://badges.gitter.im/stupidlysimple/framework.svg)](https://gitter.im/stupidlysimple/framework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -10,31 +10,31 @@ Follow us on Facebook [https://www.facebook.com/stupidlysimple]
 [![License](https://img.shields.io/:license-mit-blue.svg)](https://github.com/stupidlysimple/framework/blob/master/LICENSE)
 [![Made In](https://img.shields.io/badge/made%20in-Malaysia-red.svg)](https://www.google.com/search?q=malaysia)
 
-Stupidly Simple Framework is a micro framework built for lazy developers. Suitable for those who used to develop vanilla projects, while following today's set of standard. The core is very small in size, yet it contains most of the functions required to rapidly start developing a project. The name itself is obvious.
+StupidlySimple Framework is a micro framework built for lazy developers. Suitable for those who used to develop vanilla projects, while following today's set of standard. The core is very small in size, yet it contains most of the functions required to rapidly start developing a project. The name itself is obvious.
 
 > New programmers have to take extra effort to learn 
 > everything about modern PHP frameworks like Laravel and Symphony. Most 
 > of the time were spent on documentations rather than the actual codes.
-> This leads to the development of Stupidly Simple, as the surface of
+> This leads to the development of StupidlySimple, as the surface of
 > every terminologies, and the entry level to modern day needs. 
-> Stupidly Simple is hybrid, and it's all you need to start grasping
+> StupidlySimple is hybrid, and it's all you need to start grasping
 > modern framework styles. It is everything you need to run from small to large-scale projects.
 
 Latest Version
 ----
-Release 0.3.2 (Release Notes)
+Release 0.3.3 (Release Notes)
 
 ### Table of Contents
 | No | Title                                              |
 |----|----------------------------------------------------|
-| 1  | [Why Stupidly Simple?](#why-stupidly-simple) |
+| 1  | [Why StupidlySimple?](#why-stupidlysimple) |
 | 2  | [Technical Features](#technical-features)          |
 | 3  | [How to Install](#installation)                    |
 | 4  | [Basic Application](#basic-application)            |
 | 5  | [API Documentation](#api-documentation)            |
 
 
-Why Stupidly Simple
+Why StupidlySimple
 ----
   - No nonsense
   - Follow your own style
@@ -61,7 +61,7 @@ The MVC Structure
 
 Installation
 ----
-Stupidly Simple requires PHP at least 5.6 to run (with PHPUnit). 
+StupidlySimple requires PHP at least 5.6 to run (with PHPUnit). 
 
 Tutorial for installation is available [[on our website]](https://stupidlysimple.github.io/how-to-install.html).
 

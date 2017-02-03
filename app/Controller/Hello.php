@@ -1,12 +1,28 @@
 <?php
+/**
+ * StupidlySimple - A PHP Framework For Lazy Developers
+ *
+ * @package		StupidlySimple
+ * @author		Fariz Luqman <fariz.fnb@gmail.com>
+ * @copyright	2017 Fariz Luqman
+ * @license		MIT
+ * @link		https://stupidlysimple.github.io/
+ */
 namespace Controller;
 
-class Hello {
-    public function greetWorld(){
-        echo ('Hello world');
-    }
+use Core\Response;
+use Core\Request;
 
+class Hello {
     public function greetWithName($name){
-        echo ('Hello '. $name);
+        echo ('Hello, '. $name. '!');
+    }
+    public function greetForm(){
+        $name = Request::get('name');
+        if($name == ''){
+            echo 'How could you have no name :(';
+        }else{
+            echo ('Hello, '. $name. '!');
+        }
     }
 }

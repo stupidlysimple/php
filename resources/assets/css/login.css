@@ -85,6 +85,7 @@ body {
 }
 .container-login h2 {
     color: #ea533f;
+    margin: 20px;
 }
 .form-control {
     background-color: #ffffff;

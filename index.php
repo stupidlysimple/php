@@ -1,11 +1,12 @@
 <?php
 /**
- * Damn Stupid Simple - A PHP Framework For Lazy Developers
+ * StupidlySimple - A PHP Framework For Lazy Developers
  *
- * @package	Damn Stupid Simple
- * @author	Studio Nexus <fariz@studionexus.co>
- * @version	0.1.0
- * @link		https://www.studionexus.co/php/damnstupidsimple
+ * @package		StupidlySimple
+ * @author		Fariz Luqman <fariz.fnb@gmail.com>
+ * @copyright	2017 Fariz Luqman
+ * @license		MIT
+ * @link		https://stupidlysimple.github.io/
  */
 
 /*
@@ -17,7 +18,7 @@
 | Damn Stupid Simple framework.
 |
 */
-define('DSS_START', microtime(true));
+define('SS_START', microtime(true));
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +29,7 @@ define('DSS_START', microtime(true));
 | bit)
 |
 */
-define('DSS_PATH', realpath(dirname(__FILE__)) .'/');
+define('SS_PATH', realpath(dirname(__FILE__)) .'/');
 
 /*
 |--------------------------------------------------------------------------
@@ -41,7 +42,7 @@ define('DSS_PATH', realpath(dirname(__FILE__)) .'/');
 | as possible.
 |
 */
-require_once(DSS_PATH.'app/autoloader.php');
+require_once(SS_PATH.'app/autoloader.php');
 
 /*
 |--------------------------------------------------------------------------
@@ -52,4 +53,4 @@ require_once(DSS_PATH.'app/autoloader.php');
 | manager and routing runs perfectly well.
 |
 */
-require_once(DSS_PATH.'app/bootstrap.php');
+require_once(SS_PATH.'app/bootstrap.php');

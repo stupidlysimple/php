@@ -1,52 +1,84 @@
 <?php
+/**
+ * StupidlySimple - A PHP Framework For Lazy Developers
+ *
+ * @package		StupidlySimple
+ * @author		Fariz Luqman <fariz.fnb@gmail.com>
+ * @copyright	2017 Fariz Luqman
+ * @license		MIT
+ * @link		https://stupidlysimple.github.io/
+ */
 namespace Controller;
+
 use Sentry;
 use Response;
+use Request;
 use Viewer;
 
 class Auth {
-    public function __construct(){
-
+    public function __construct()
+    {
     }
 
-    public function displayRegisterPage(){
+    public function displayRegisterPage()
+    {
         Viewer::file('resources/views/auth/register');
     }
 
-    public function displayLoginPage(){
+    public function displayLoginPage()
+    {
         Viewer::file('resources/views/auth/login');
     }
 
-    public function doAuthenticate(){
+    public function doAuthenticate()
+    {
         try{
             // Login credentials
             $credentials = array(
-                'email'    => Response::get('email'),
-                'password' => Response::get('password'),
+                'email'    => Request::get('email'),
+                'password' => Request::get('password')
             );
             // Authenticate the user
             $user = Sentry::authenticate($credentials, false);
 
         }catch (\Cartalyst\Sentry\Users\LoginRequiredException $e){
-            echo 'Login field is required.';
+            Response::redirect('login')->with([
+                'login_message'=>'Login credentials not supplied',
+                'type'         =>'alert-danger'
+            ]);
 
         }catch (\Cartalyst\Sentry\Users\PasswordRequiredException $e){
-            echo 'Password field is required.';
+            Response::redirect('login')->with([
+                'login_message'=>'Password field is required',
+                'type'         =>'alert-danger'
+            ]);
 
         }catch (\Cartalyst\Sentry\Users\WrongPasswordException $e){
-            echo 'Wrong password, try again.';
+            Response::redirect('login')->with([
+                'login_message'=>'Wrong password, try again.',
+                'type'         =>'alert-danger'
+            ]);
 
         }catch (\Cartalyst\Sentry\Users\UserNotFoundException $e){
-            echo 'User was not found.';
+            Response::redirect('login')->with([
+                'login_message'=>'User not found.',
+                'type'         =>'alert-danger'
+            ]);
 
         }catch (\Cartalyst\Sentry\Users\UserNotActivatedException $e){
-            echo 'User is not activated.';
+            Response::redirect('login')->with([
+                'login_message'=>'User is not activated.',
+                'type'         =>'alert-danger'
+            ]);
 
         }finally{
             if(Sentry::check() === true){
                 Admin::redirectToAdminHome();
             }else{
-                echo ' Login failed!';
+                Response::redirect('login')->with([
+                    'login_message'=>'Unable to login',
+                    'type'         =>'alert-danger'
+                ]);
             }
         }
     }
@@ -54,24 +86,38 @@ class Auth {
     public function doRegister(){
         try{
             $user = Sentry::register(array(
-                'email'    => Response::get('email'),
-                'password' => Response::get('password'),
+                'email'    => Request::get('email'),
+                'password' => Request::get('password'),
+                'first_name' => Request::get('first_name'),
+                'last_name' => Request::get('last_name')
             ), $activate = true);
 
-        }catch (Cartalyst\Sentry\Users\LoginRequiredException $e){
-            echo 'Login field is required.';
+        }catch (\Cartalyst\Sentry\Users\LoginRequiredException $e){
+            Response::redirect('register')->with([
+                'login_message'=>'Login credentials not supplied',
+                'type'         =>'alert-danger'
+            ]);
 
-        }catch (Cartalyst\Sentry\Users\PasswordRequiredException $e){
-            echo 'Password field is required.';
+        }catch (\Cartalyst\Sentry\Users\PasswordRequiredException $e){
+            Response::redirect('register')->with([
+                'login_message'=>'Password field is required',
+                'type'         =>'alert-danger'
+            ]);
 
-        }catch (Cartalyst\Sentry\Users\UserExistsException $e){
-            echo 'User with this login already exists.';
+        }catch (\Cartalyst\Sentry\Users\UserExistsException $e){
+            Response::redirect('register')->with([
+                'login_message'=>'User with that login already exist.',
+                'type'         =>'alert-danger'
+            ]);
+
+        }catch(\Exception $e){
 
         }finally{
             if($user){
-                echo('Register successful. Redirecting to login page in 3 second...');
-                Response::redirect('login', 3);
-
+                Response::redirect('login')->with([
+                    'login_message'=>'Registration successful. You can now login.',
+                    'type'         =>'alert-success'
+                ]);
             }
         }
     }
@@ -79,7 +125,6 @@ class Auth {
     public function doLogout(){
         Sentry::logout();
         Response::redirect('login');
-
     }
 
 }

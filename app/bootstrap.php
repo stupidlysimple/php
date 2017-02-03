@@ -1,13 +1,12 @@
 <?php
 /**
- * Damn Stupid Simple - A PHP Framework For Lazy Developers
+ * StupidlySimple - A PHP Framework For Lazy Developers
  *
- * @package		Damn Stupid Simple
- * @author		Studio Nexus <fariz@studionexus.co>
- * @copyright	2016 Studio Nexus
+ * @package		StupidlySimple
+ * @author		Fariz Luqman <fariz.fnb@gmail.com>
+ * @copyright	2017 Fariz Luqman
  * @license		MIT
- * @version		Release: 0.3.0
- * @link		https://www.studionexus.co/php/damnstupidsimple
+ * @link		https://stupidlysimple.github.io/
  */
 
 /*

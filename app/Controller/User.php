@@ -1,9 +1,19 @@
 <?php
+/**
+ * StupidlySimple - A PHP Framework For Lazy Developers
+ *
+ * @package		StupidlySimple
+ * @author		Fariz Luqman <fariz.fnb@gmail.com>
+ * @copyright	2017 Fariz Luqman
+ * @license		MIT
+ * @link		https://stupidlysimple.github.io/
+ */
 namespace Controller;
 
 use Sentry;
 use Viewer;
 use Response;
+use Request;
 
 class User {
 
@@ -15,10 +25,10 @@ class User {
     }
 
     public function editUser(){
-        $id = Response::get('id');
-        $first_name = Response::get('first_name');
-        $last_name = Response::get('last_name');
-        $password = Response::get('password');
+        $id = Request::get('id');
+        $first_name = Request::get('first_name');
+        $last_name = Request::get('last_name');
+        $password = Request::get('password');
         try
         {
             if($password == ''){
@@ -70,7 +80,7 @@ class User {
 
     public function deleteUser()
     {
-        $id = Response::get('id');
+        $id = Request::get('id');
         try
         {
             $user = \Model\User::find($id);

@@ -1,18 +1,13 @@
 <?php
-/*
-|--------------------------------------------------------------------------
-| Services
-|--------------------------------------------------------------------------
-|
-| All of your applications will be mapped here, and can be accessible
-| with the $service object in your app.
-| 
-| e.g: $service->test->hello();
-|
-| 'the namespace' => 'the variable name for accessing your written applications'
-|
-*/
-
+/**
+ * StupidlySimple - A PHP Framework For Lazy Developers
+ *
+ * @package		StupidlySimple
+ * @author		Fariz Luqman <fariz.fnb@gmail.com>
+ * @copyright	2017 Fariz Luqman
+ * @license		MIT
+ * @link		https://stupidlysimple.github.io/
+ */
 return [
     'Service\Test\TestService' => 'test'
 ];
