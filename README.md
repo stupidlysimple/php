@@ -55,10 +55,6 @@ Technical Features
 
 [[back to top]](#table-of-contents)
 
-The MVC Structure
-----
-<img src="https://s30.postimg.org/59jbts6n5/DSS_MVC_Structure.jpg">
-
 Installation
 ----
 StupidlySimple requires PHP at least 5.6 to run (with PHPUnit). 
