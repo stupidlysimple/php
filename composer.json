@@ -1,7 +1,7 @@
 {
-    "name": "stupidlysimple/framework",
-    "description": "A simple framework for lazy developers",
-    "keywords": ["micro framework","lazy","stupidlysimple"],
+    "name": "stupidlysimple/php",
+    "description": "StupidlySimple Framework for PHP - MVC Framework for lazy developers",
+    "keywords": ["micro framework","lazy","stupidlysimple","php framework"],
     "license": "MIT",
     "type": "project",
     "authors": [{
