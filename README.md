@@ -2,12 +2,12 @@
 
 Follow us on Facebook [https://www.facebook.com/stupidlysimpleframework]
 
-[![Join the chat at https://gitter.im/stupidlysimpleframework/Lobby](https://badges.gitter.im/stupidlysimple/framework.svg)](https://gitter.im/stupidlysimple/framework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/stupidlysimpleframework/Lobby](https://badges.gitter.im/stupidlysimple/php.svg)](https://gitter.im/stupidlysimple/php?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![PHP version](https://badge.fury.io/ph/stupidlysimple%2Fframework.svg)](https://badge.fury.io/ph/stupidlysimple%2Fframework) [![Build](https://api.travis-ci.org/stupidlysimple/framework.svg)](https://travis-ci.org/stupidlysimple/framework)
-[![Total Downloads](https://poser.pugx.org/stupidlysimple/framework/downloads)](https://packagist.org/packages/stupidlysimple/framework)
-[![composer.lock](https://poser.pugx.org/stupidlysimple/framework/composerlock)](https://packagist.org/packages/stupidlysimple/framework)
-[![License](https://img.shields.io/:license-mit-blue.svg)](https://github.com/stupidlysimple/framework/blob/master/LICENSE)
+[![PHP version](https://badge.fury.io/ph/stupidlysimple%2Fframework.svg)](https://badge.fury.io/ph/stupidlysimple%2Fframework) [![Build](https://api.travis-ci.org/stupidlysimple/php.svg)](https://travis-ci.org/stupidlysimple/php)
+[![Total Downloads](https://poser.pugx.org/stupidlysimple/php/downloads)](https://packagist.org/packages/stupidlysimple/php)
+[![composer.lock](https://poser.pugx.org/stupidlysimple/php/composerlock)](https://packagist.org/packages/stupidlysimple/php)
+[![License](https://img.shields.io/:license-mit-blue.svg)](https://github.com/stupidlysimple/php/blob/master/LICENSE)
 [![Made In](https://img.shields.io/badge/made%20in-Malaysia-red.svg)](https://www.google.com/search?q=malaysia)
 
 StupidlySimple Framework is a micro framework built for lazy developers. Suitable for those who used to develop vanilla projects, while following today's set of standard. The core is very small in size, yet it contains most of the functions required to rapidly start developing a project. The name itself is obvious.
@@ -109,7 +109,7 @@ Router::dispatch();
 
 API Documentation
 ----
-Documentations are available on [the wiki page](https://github.com/stupidlysimple/framework/wiki).
+Documentations are available on [the wiki page](https://github.com/stupidlysimple/php/wiki).
 
 Note: If you wish to see the Core files, please go to <a href="https://github.com/stupidlysimple/core">stupidlysimple/core</a>
 
