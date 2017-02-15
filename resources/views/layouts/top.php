@@ -4,7 +4,7 @@
 
         <!-- Logo -->
         <a href="home" class="logo">
-            <span class="symbol"><img src="resources/assets/images/logo.png" alt=""/></span><span class="title">StupidlySimple</span>
+            <span class="symbol"><img src="resources/assets/images/logo.png" alt=""/></span><span class="title">StupidlySimple PHP</span>
         </a>
 
         <!-- Nav -->
