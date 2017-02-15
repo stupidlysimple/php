@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "402bd00eec68a75dd5671eecc032f752",
+    "content-hash": "58c3c1c9d434587c91e97c4ee3f8414f",
     "packages": [
         {
             "name": "cartalyst/sentry",
@@ -610,17 +610,17 @@
             "time": "2017-01-24T00:38:01+00:00"
         },
         {
-            "name": "stupidlysimple/core",
-            "version": "v0.3.3",
+            "name": "stupidlysimple/php-core",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/stupidlysimple/core.git",
-                "reference": "b79002eea17c790b0e02c5be7780f0de7ce18afc"
+                "url": "https://github.com/stupidlysimple/php-core.git",
+                "reference": "275c09f97aa88cbbfa7cd8033668f00609702f74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stupidlysimple/core/zipball/b79002eea17c790b0e02c5be7780f0de7ce18afc",
-                "reference": "b79002eea17c790b0e02c5be7780f0de7ce18afc",
+                "url": "https://api.github.com/repos/stupidlysimple/php-core/zipball/275c09f97aa88cbbfa7cd8033668f00609702f74",
+                "reference": "275c09f97aa88cbbfa7cd8033668f00609702f74",
                 "shasum": ""
             },
             "require": {
@@ -653,7 +653,7 @@
                 "php framework",
                 "stupidly simple"
             ],
-            "time": "2017-02-03T22:41:31+00:00"
+            "time": "2017-02-15T17:05:53+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -716,16 +716,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "6520f3d4cce604d9dd1e86cac7af954984dd9bda"
+                "reference": "ca032cc56976d88b85e7386b17020bc6dc95dbc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/6520f3d4cce604d9dd1e86cac7af954984dd9bda",
-                "reference": "6520f3d4cce604d9dd1e86cac7af954984dd9bda",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/ca032cc56976d88b85e7386b17020bc6dc95dbc5",
+                "reference": "ca032cc56976d88b85e7386b17020bc6dc95dbc5",
                 "shasum": ""
             },
             "require": {
@@ -776,20 +776,20 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-02T20:32:22+00:00"
+            "time": "2017-01-21T17:06:35+00:00"
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "b54b23f9a19b465e76fdaac0f6732410467c83b2"
+                "reference": "5bb4435a03a4f05c211f4a9a8ee2756965924511"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/b54b23f9a19b465e76fdaac0f6732410467c83b2",
-                "reference": "b54b23f9a19b465e76fdaac0f6732410467c83b2",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/5bb4435a03a4f05c211f4a9a8ee2756965924511",
+                "reference": "5bb4435a03a4f05c211f4a9a8ee2756965924511",
                 "shasum": ""
             },
             "require": {
@@ -839,7 +839,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2017-01-03T08:53:57+00:00"
+            "time": "2017-01-24T12:58:58+00:00"
         }
     ],
     "packages-dev": [
@@ -2044,16 +2044,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "50eadbd7926e31842893c957eca362b21592a97d"
+                "reference": "e1718c6bf57e1efbb8793ada951584b2ab27775b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/50eadbd7926e31842893c957eca362b21592a97d",
-                "reference": "50eadbd7926e31842893c957eca362b21592a97d",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/e1718c6bf57e1efbb8793ada951584b2ab27775b",
+                "reference": "e1718c6bf57e1efbb8793ada951584b2ab27775b",
                 "shasum": ""
             },
             "require": {
@@ -2095,7 +2095,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-03T13:51:32+00:00"
+            "time": "2017-01-21T17:06:35+00:00"
         },
         {
             "name": "webmozart/assert",
