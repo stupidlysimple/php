@@ -108,12 +108,34 @@ Core\Viewer::file('layouts/head.php', $data); ?>
             <section class="tiles tiles-smaller">
                 <article>
                     <span class="image">
-                        <img src="resources/assets/images/pic6.jpg" alt=""/>
+                        <img src="resources/assets/images/pic8.jpg" alt=""/>
                     </span>
-                    <a href="routing">
+                    <a href="blogging/home">
                         <h2>Blogging</h2>
                         <div class="content">
-                            <p>StupidlySimple does blogging.</p>
+                            <p>StupidlySimple does blogging</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="resources/assets/images/pic8.jpg" alt=""/>
+                    </span>
+                    <a href="costing/home">
+                        <h2>Product Costing</h2>
+                        <div class="content">
+                            <p>Simple application to manage products and costing</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="resources/assets/images/pic8.jpg" alt=""/>
+                    </span>
+                    <a href="costing/home">
+                        <h2>Project Management</h2>
+                        <div class="content">
+                            <p>Basic project management app</p>
                         </div>
                     </a>
                 </article>
