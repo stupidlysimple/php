@@ -92,8 +92,6 @@ Introducing nightly builds: we are really committed to project that we decided t
 
 Nightly builds are released more often than the stable build. Eventually a nightly build will be converted to stable.
 
-Developers are very recommended to create pull request under the nightly branch.
-
 [Get nightly builds](https://github.com/stupidlysimple/php/wiki/Nightly-Builds)
 
 [[back to top]](#table-of-contents)
