@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer id="footer">
+<footer id="footer" style="background: #383838; color: #fff;">
     <div class="inner">
         <section>
             <h2>About</h2>
@@ -9,12 +9,12 @@
         <section>
             <h2>Follow</h2>
             <ul class="icons">
-                <li><a href="https://www.facebook.com/stupidlysimpleforum" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://www.facebook.com/stupidlysimpleframework" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
                 <li><a href="https://github.com/stupidlysimple/php" class="icon style2 fa-github"><span class="label">Github</span></a></li>
             </ul>
         </section>
-        <ul class="copyright">
-            <li>Powered by StupidlySimple PHP</li>
+        <ul class="copyright" style="color: #bababa">
+            <li>Powered by StupidlySimple PHP - Nightly build</li>
             <li>Design: <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
         </ul>
     </div>
