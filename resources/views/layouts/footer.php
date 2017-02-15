@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer id="footer" style="background: #383838; color: #fff;">
+<footer id="footer" class="nightly">
     <div class="inner">
         <section>
             <h2>About</h2>
@@ -13,7 +13,7 @@
                 <li><a href="https://github.com/stupidlysimple/php" class="icon style2 fa-github"><span class="label">Github</span></a></li>
             </ul>
         </section>
-        <ul class="copyright" style="color: #bababa">
+        <ul class="copyright">
             <li>Powered by StupidlySimple PHP - Nightly build</li>
             <li>Design: <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
         </ul>

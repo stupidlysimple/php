@@ -3367,3 +3367,12 @@
 	text-align: center;
 	color: #fff;
 }
+
+.nightly {
+	background: #383838 !important;
+	color: #fff;
+}
+
+.nightly .copyright {
+	color: #bababa !important;
+}
