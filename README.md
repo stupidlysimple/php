@@ -117,6 +117,13 @@ Development
 ----
 Want to contribute? Great! Please do not hesitate to contribute to the framework development.
 
+#### Nightly Builds
+Introducing nightly builds: we are really committed to project that we decided to release nightly builds.
+
+Nightly builds are released more often than the stable build. Eventually a nightly build will be converted to stable.
+
+Developers are very recommended to create pull request under the nightly branch.
+
 [[back to top]](#table-of-contents)
 
 License
