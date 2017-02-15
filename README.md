@@ -1,4 +1,4 @@
-# StupidlySimple Framework for PHP and HHVM
+# StupidlySimple Framework for PHP (HHVM Compatible)
 
 Follow us on Facebook [https://www.facebook.com/stupidlysimpleframework]
 
@@ -22,7 +22,7 @@ StupidlySimple Framework is a micro framework built for lazy developers. Suitabl
 
 Latest Version
 ----
-Release 0.3.3 (Release Notes)
+Release 0.4.0 (Release Notes)
 
 ### Table of Contents
 | No | Title                                              |
@@ -70,7 +70,7 @@ If you do not have Composer installed, please follow [this link](https://getcomp
 
 As soon as you have installed the Composer already, type this on the Command Prompt (or Terminal)
 ```sh
-$ composer create-project stupidlysimple/framework myproject
+$ composer create-project stupidlysimple/php myproject
 ```
 
 or if you acquired the zip/tarball, issue this command on the Command Prompt (or Terminal)

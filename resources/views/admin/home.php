@@ -81,13 +81,14 @@ Core\Viewer::file('../layouts/head.php', $data); ?>
                                     Last Name: <input type="text" name="last_name" value="<?= Sentry::getUser()->last_name; ?>" class="input-sm">
                                 </div>
                                 <div class="form-group">
-                                    Email: <input type="email" name="email" value="<?= Sentry::getUser()->email; ?>" class="input-sm">
+                                    Email: <input type="text" name="email" value="<?= Sentry::getUser()->email; ?>" class="input-sm">
                                 </div>
                                 <div class="form-group">
                                     Password: <input name="password" type="password" class="input-sm">
                                 </div>
                                 <div class="form-group">
                                     <button class="button special">Change details</button>
+                                    <input class="button " value="Reset" type="reset">
                                 </div>
                             </form>
                         </div>
