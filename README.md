@@ -2,7 +2,7 @@
 
 Follow us on Facebook [https://www.facebook.com/stupidlysimpleframework]
 
-[![Join the chat at https://gitter.im/stupidlysimpleframework/Lobby](https://badges.gitter.im/stupidlysimple/php.svg)](https://gitter.im/stupidlysimple/php?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/stupidlysimpleframework](https://badges.gitter.im/stupidlysimple/php.svg)](https://gitter.im/stupidlysimpleframework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![PHP version](https://badge.fury.io/ph/stupidlysimple%2Fphp.svg)](https://badge.fury.io/ph/stupidlysimple%2Fphp) [![Build](https://api.travis-ci.org/stupidlysimple/php.svg)](https://travis-ci.org/stupidlysimple/php)
 [![Total Downloads](https://poser.pugx.org/stupidlysimple/php/downloads)](https://packagist.org/packages/stupidlysimple/php)
