@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "58c3c1c9d434587c91e97c4ee3f8414f",
+    "content-hash": "9a8bcbb5a80f058cbb66ecc17eca28a0",
     "packages": [
         {
             "name": "cartalyst/sentry",
@@ -611,16 +611,16 @@
         },
         {
             "name": "stupidlysimple/php-core",
-            "version": "0.4.0",
+            "version": "dev-nightly",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stupidlysimple/php-core.git",
-                "reference": "275c09f97aa88cbbfa7cd8033668f00609702f74"
+                "reference": "7017cafb57143f678ba53cae341b69165a4000de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stupidlysimple/php-core/zipball/275c09f97aa88cbbfa7cd8033668f00609702f74",
-                "reference": "275c09f97aa88cbbfa7cd8033668f00609702f74",
+                "url": "https://api.github.com/repos/stupidlysimple/php-core/zipball/7017cafb57143f678ba53cae341b69165a4000de",
+                "reference": "7017cafb57143f678ba53cae341b69165a4000de",
                 "shasum": ""
             },
             "require": {
@@ -653,7 +653,7 @@
                 "php framework",
                 "stupidly simple"
             ],
-            "time": "2017-02-15T17:05:53+00:00"
+            "time": "2017-02-15 18:06:17"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -2150,7 +2150,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "stupidlysimple/php-core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
