@@ -30,8 +30,7 @@ Release 0.4.0 (Release Notes)
 | 1  | [Why StupidlySimple?](#why-stupidlysimple) |
 | 2  | [Technical Features](#technical-features)          |
 | 3  | [How to Install](#installation)                    |
-| 4  | [Basic Application](#basic-application)            |
-| 5  | [API Documentation](#api-documentation)            |
+| 4  | [API Documentation](#api-documentation)            |
 
 
 Why StupidlySimple
@@ -79,31 +78,6 @@ $ composer update
 ```
 
 Once the vendor file is created and all of the packages has been uploaded, you can now view the homepage and start programming. (Be sure to update the project always).
-
-[[back to top]](#table-of-contents)
-
-Basic Application
-----
-```php
-<?php
-// All of the core classes are in this namespace
-namespace Core;
-
-// Define the root directory
-define('SS_PATH', __DIR__ . '/');
-
-// Require Composer's fantastic autoloader to load 3rd party packages
-require_once(SS_PATH.'app/autoloader.php');
-
-// Lazy routing
-Router::get('(:any)', function() {
-	Viewer::file('home.php');
-});
-
-// Dispatch the router and done
-Router::dispatch();
-?>
-```
 
 [[back to top]](#table-of-contents)
 
