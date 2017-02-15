@@ -3360,3 +3360,10 @@
 			}
 
 		}
+
+.ss_exec_time {
+	background: #383838;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
