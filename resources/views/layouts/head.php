@@ -1,5 +1,5 @@
 <head profile="http://www.w3.org/2005/10/profile">
-    <title><?= $title ?></title>
+    <title>{{title}}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="resources/assets/js/ie/html5shiv.js"></script><![endif]-->
