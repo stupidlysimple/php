@@ -16,7 +16,7 @@
     "require": {
     	"php": ">=5.4.0",
     	"filp/whoops": "^2.1",
-        "stupidlysimple/php-core": "0.4.*",
+        "stupidlysimple/php-core": "0.5.*",
     	"symfony/var-dumper": "^3.1",
     	"phpFastCache/phpFastCache": "^4.3",
     	"illuminate/database": "5.2.*",
