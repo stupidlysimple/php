@@ -54,7 +54,7 @@ Installation
 ----
 StupidlySimple requires PHP at least 5.6 to run (with PHPUnit). 
 
-Tutorial for installation is available [on our website](https://stupidlysimple.github.io/how-to-install.html).
+Tutorial for installation is available [on our website](https://stupidlysimple.github.io/generic.html).
 
 ##### Install via Composer
 
