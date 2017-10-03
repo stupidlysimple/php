@@ -7,14 +7,15 @@
 <html>
 <?php
 $data = [ 'title' => 'StupidlySimple PHP | Service' ];
-Core\Viewer::file('layouts/head.php', $data); ?>
+Core\Viewer::file('layouts/head', $data);
+?>
 <body>
 <!-- Wrapper -->
 <div id="wrapper">
 
-    <?php Viewer::file('layouts/top.php') ?>
+    <?php Viewer::file('layouts/top') ?>
 
-    <?php Viewer::file('layouts/menu.php') ?>
+    <?php Viewer::file('layouts/menu') ?>
 
     <!-- Main -->
     <div id="main">
@@ -47,10 +48,10 @@ Core\Viewer::file('layouts/head.php', $data); ?>
         </div>
     </div>
 
-<?php Viewer::file('layouts/footer.php') ?>
+<?php Viewer::file('layouts/footer') ?>
 
 </div>
 
-<?php Viewer::file('layouts/scripts.php') ?>
+<?php Viewer::file('layouts/scripts') ?>
 </body>
 </html>

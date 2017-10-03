@@ -29,8 +29,7 @@ define('SS_START', microtime(true));
 | bit)
 |
 */
-
-define('SS_PATH', realpath(dirname(__FILE__)));
+define('SS_PATH', realpath(dirname(__FILE__).'/../'));
 
 /*
 |--------------------------------------------------------------------------

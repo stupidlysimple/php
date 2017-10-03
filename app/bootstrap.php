@@ -70,7 +70,6 @@ $app->link('cachemanager', Cache::init());
 |
 */
 $service = Service::loadServices();
-
 /*
 |--------------------------------------------------------------------------
 | Share the Singleton $app and $service

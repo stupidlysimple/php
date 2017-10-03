@@ -11,15 +11,23 @@
 
 /*
 |--------------------------------------------------------------------------
+| Login and Registration Page
+|--------------------------------------------------------------------------
+|
+| This will display the login and register page respectively
+|
+*/
+Router::get('/login', 'auth/login');
+Router::get('/register', 'auth/register');
+
+/*
+|--------------------------------------------------------------------------
 | Login Controller Demonstration
 |--------------------------------------------------------------------------
 |
 | This is to demonstrate using Controller to manage authentication
 |
 */
-Router::get('login', 'Controller\Auth@displayLoginPage');
-Router::post('login', 'Controller\Auth@doAuthenticate');
-Router::get('register', 'Controller\Auth@displayRegisterPage');
-Router::post('register', 'Controller\Auth@doRegister');
-Router::get('logout', 'Controller\Auth@doLogout');
-Router::get('admin', 'Controller\Admin@displayAdminPage');
+Router::post('/login', 'Controller\Auth@authenticate');
+Router::post('/register', 'Controller\Auth@register');
+Router::get('/logout', 'Controller\Auth@logout');

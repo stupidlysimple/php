@@ -10,12 +10,10 @@
  */
 return 
 [
-    'path' => SS_PATH . 'routes' . '/',
-    'routes' => 
-    [
-        'web',
-        'api',
+    'path' => SS_PATH . '/routes' . '/',
+    'routes' => [
         'auth',
-        'hello'
+        'api',
+        'web'
     ]
 ];

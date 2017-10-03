@@ -14,10 +14,14 @@ use Core\Response;
 use Core\Request;
 
 class Hello {
-    public function greetWithName($name){
+
+    public function greetWithName($name)
+    {
         echo ('Hello, '. $name. '!');
     }
-    public function greetForm(){
+
+    public function greetForm()
+    {
         $name = Request::get('name');
         if($name == ''){
             echo 'How could you have no name :(';

@@ -5,18 +5,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-<?php
-$data = [ 'title' => 'StupidlySimple PHP | Home' ];
-Core\Viewer::file('../layouts/head.php', $data); ?>
+<?php Core\Viewer::file('../layouts/head', $data = [ 'title' => 'StupidlySimple PHP | Home' ]); ?>
 <body>
 <!-- Wrapper -->
 <div id="wrapper">
 
-    <?php
-    $top_data = ['is_admin' => true];
-    Viewer::file('../layouts/top.php', $top_data) ?>
+    <?php Viewer::file('layouts/top', $top_data = ['is_admin' => true]); ?>
 
-    <?php Viewer::file('../layouts/menu.php') ?>
+    <?php Viewer::file('layouts/menu') ?>
 
     <!-- Main -->
     <div id="main">
@@ -98,10 +94,10 @@ Core\Viewer::file('../layouts/head.php', $data); ?>
         </div>
     </div>
 
-    <?php Viewer::file('../layouts/footer.php') ?>
+    <?php Viewer::file('layouts/footer') ?>
 
 </div>
 
-<?php Viewer::file('../layouts/scripts.php') ?>
+<?php Viewer::file('layouts/scripts') ?>
 </body>
 </html>

@@ -32,7 +32,11 @@
             </ul>
             <div class="tab-content tabs-login col-lg-12 col-md-12 col-sm-12 cols-xs-12">
                 <div id="login-access" class="tab-pane fade active in">
-                    <h2 class="logo"><img style="width:100px" src="resources/assets/images/logo.png"></h2>
+                    <h2 class="logo">
+                        <a href="./">
+                            <img style="width:100px" src="resources/assets/images/logo.png">
+                        </a>
+                    </h2>
                     <form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal">
                         <div class="form-group ">
                             <?php
@@ -42,18 +46,18 @@
                                     </div>');
                             }
                             ?>
-                            <label for="login" class="sr-only">Email</label>
+                            <label for="login">Username/Email</label>
                             <input type="text" class="form-control" name="email" id="login_value"
                                    placeholder="Email" tabindex="1" value=""/>
                         </div>
                         <div class="form-group ">
-                            <label for="password" class="sr-only">Password</label>
+                            <label for="password">Password</label>
                             <input type="password" class="form-control" name="password" id="password"
                                    placeholder="Password" value="" tabindex="2"/>
                         </div>
                         <br/>
                         <div class="form-group ">
-                            <button type="submit" id="submit" tabindex="5" class="btn btn-lg btn-primary">Login</button>
+                            <button type="submit" id="submit" tabindex="5" class="btn btn-lg btn-primary">Register</button>
                         </div>
                     </form>
                 </div>

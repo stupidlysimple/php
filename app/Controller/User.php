@@ -17,13 +17,21 @@ use Request;
 
 class User {
 
-    public function __construct(){
+    /**
+     * User constructor.
+     */
+    public function __construct()
+    {
         // Always check whether the user is logged in or not to do the action
         if(Sentry::check() !== true){
             Response::redirect('login');
         }
     }
 
+
+    /**
+     *
+     */
     public function editUser(){
         $id = Request::get('id');
         $first_name = Request::get('first_name');
@@ -72,12 +80,15 @@ class User {
                 }
             }
         }
-        catch (Exception $e)
+        catch (\Exception $e)
         {
             echo 'User was not found.';
         }
     }
 
+    /**
+     *
+     */
     public function deleteUser()
     {
         $id = Request::get('id');
@@ -90,7 +101,7 @@ class User {
             }
 
             $user->delete();
-        }catch(Exception $e)
+        }catch(\Exception $e)
         {
             Response::redirect('admin?delete=failed');
         }

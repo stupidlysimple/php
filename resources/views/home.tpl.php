@@ -6,15 +6,16 @@
 -->
 <html>
 <?php
-$data = [ 'title' => 'StupidlySimple PHP | Home' ];
-Core\Viewer::file('layouts/head.php', $data); ?>
+$data = ['title' => 'StupidlySimple PHP | Home'];
+Viewer::file('layouts/head', $data);
+?>
 <body>
 <!-- Wrapper -->
 <div id="wrapper">
 
-    <?php Viewer::file('layouts/top.php') ?>
+    <?php Viewer::file('layouts/top') ?>
 
-    <?php Viewer::file('layouts/menu.php') ?>
+    <?php Viewer::file('layouts/menu') ?>
 
     <!-- Main -->
     <div id="main">
@@ -25,6 +26,7 @@ Core\Viewer::file('layouts/head.php', $data); ?>
                     from the root directory. You can read tutorials and documentations on <a target="_blank" href="https://stupidlysimple.github.io">our website</a>
                     or even from here.
                     Start coding today and get creative.</p>
+
             </header>
             <section class="tiles">
                 <article class="style1">
@@ -143,10 +145,11 @@ Core\Viewer::file('layouts/head.php', $data); ?>
         </div>
     </div>
 
-<?php Viewer::file('layouts/footer.php') ?>
+<?php Viewer::file('layouts/footer') ?>
 
 </div>
 
-<?php Viewer::file('layouts/scripts.php') ?>
+<?php Viewer::file('layouts/scripts') ?>
+
 </body>
 </html>
