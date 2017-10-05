@@ -8,10 +8,10 @@
  * @license		MIT
  * @link		https://stupidlysimple.github.io/
  */
-return 
+return
 [
     'path' => SS_PATH . 'routes' . '/',
-    'routes' => 
+    'routes' =>
     [
         'web',
         'api',

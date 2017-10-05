@@ -18,8 +18,8 @@
 | view files (home.php) into any directory within the project.
 |
 */
-Router::get('', function() {
-	Viewer::file('resources/views/home.php');
+Router::get('', function () {
+    Viewer::file('resources/views/home.php');
 });
 
 /*
@@ -31,8 +31,8 @@ Router::get('', function() {
 | URI into any file.
 |
 */
-Router::get('(:any)', function($match) {
-	Viewer::file('resources/views/' . $match);
+Router::get('(:any)', function ($match) {
+    Viewer::file('resources/views/' . $match);
 });
 
 /*

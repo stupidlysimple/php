@@ -37,7 +37,7 @@ define('SS_PATH', realpath(dirname(__FILE__)) .'/');
 |--------------------------------------------------------------------------
 |
 | In this file we will register the Autoloader from Composer. Environment
-| variables (that you set on config/env.php) will be registered this time. 
+| variables (that you set on config/env.php) will be registered this time.
 | Our sweet debugging tool will also be loaded to track errors as earlier
 | as possible.
 |

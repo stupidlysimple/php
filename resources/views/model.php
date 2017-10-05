@@ -36,7 +36,7 @@ Core\Viewer::file('layouts/head.php', $data); ?>
                 <p>
                     <?php
                     $i = 1;
-                    foreach(Model\Post::all() as $post){
+                    foreach (Model\Post::all() as $post) {
                         echo('
                         <div class="alert alert-info">
                             

@@ -12,11 +12,13 @@ namespace Model;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
-class Comment extends Eloquent {
+class Comment extends Eloquent
+{
     /**
      * Get the post for the comment.
      */
-    public function comments() {
-        return $this->belongsTo('Model\Post','user_id');
+    public function comments()
+    {
+        return $this->belongsTo('Model\Post', 'user_id');
     }
 }

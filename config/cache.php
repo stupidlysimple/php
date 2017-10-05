@@ -48,7 +48,7 @@ return [
     'memcache'      => [
             array('127.0.0.1', 11211, 1),
     ],
-		
+        
     'redis'         => [
             'host'      => '127.0.0.1',
             'port'      => '6379',
@@ -56,14 +56,14 @@ return [
             'database'  => '',
             'timeout'   => '',
     ],
-		
+        
     'ssdb'          => [
             'host'      => '127.0.0.1',
             'port'      => 8888,
             'password'  => '',
             'timeout'   => '',
     ],
-		
+        
     /*
      * Use 1 as normal traditional, 2 = phpfastcache fastest as default, 3 = phpfastcache memory stable
      */

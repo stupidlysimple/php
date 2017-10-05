@@ -18,7 +18,7 @@
 | Try to go to /hello or /hello/yourname and see what it shows
 |
 */
-Router::get('hello', function (){
+Router::get('hello', function () {
     Viewer::file('resources/views/hello.php');
 });
 Router::get('hello/(:any)', 'Controller\Hello@greetWithName');
