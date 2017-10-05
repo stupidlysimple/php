@@ -1,38 +1,46 @@
 {
-    "name": "stupidlysimple/php",
-    "description": "StupidlySimple Framework for PHP - MVC Framework for lazy developers",
-    "keywords": ["micro framework","lazy","stupidlysimple","php framework"],
-    "license": "MIT",
-    "type": "project",
-    "authors": [{
-    	"name": "Fariz Luqman",
-    	"email": "fariz.fnb@gmail.com",
-	"homepage": "https://stupidlysimple.github.io",
-	"role": "Developer"
-    }],
-    "config": {
-    	"vendor-dir": "vendor"
-    },
-    "require": {
-    	"php": ">=5.4.0",
-    	"filp/whoops": "^2.1",
-        "stupidlysimple/php-core": "0.5.*",
-    	"symfony/var-dumper": "^3.1",
-    	"phpFastCache/phpFastCache": "^4.3",
-    	"illuminate/database": "5.2.*",
-        "cartalyst/sentry": "2.1.*"
-    },
-    "require-dev": {
-      "phpunit/phpunit": "5.4.*"
-    },
-    "autoload": {
-      "psr-4": {
-          "Core\\": "app/Core"
-      },
-    	"classmap": [
-    	    "app/Model",
-            "app/Controller",
-            "app/Service"
-    	]
+  "name": "stupidlysimple/php",
+  "description": "StupidlySimple Framework for PHP - MVC Framework for lazy developers",
+  "keywords": [
+    "micro framework",
+    "lazy",
+    "stupidlysimple",
+    "php framework"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Fariz Luqman",
+      "email": "fariz.fnb@gmail.com",
+      "homepage": "https://stupidlysimple.github.io",
+      "role": "Developer"
     }
+  ],
+  "prefer-stable": true,
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "filp/whoops": "^2.1",
+    "stupidlysimple/php-core": "0.5.*",
+    "symfony/var-dumper": "^3.1",
+    "phpFastCache/phpFastCache": "^4.3",
+    "illuminate/database": "5.2.*",
+    "cartalyst/sentry": "2.1.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Core\\": "app/Core"
+    },
+    "classmap": [
+      "app/Model",
+      "app/Controller",
+      "app/Service"
+    ]
+  }
 }
