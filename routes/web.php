@@ -1,11 +1,11 @@
 <?php
 /**
- * StupidlySimple - A PHP Framework For Lazy Developers
+ * StupidlySimple - A PHP Framework For Lazy Developers.
  *
- * @package		StupidlySimple
  * @author		Fariz Luqman <fariz.fnb@gmail.com>
  * @copyright	2017 Fariz Luqman
  * @license		MIT
+ *
  * @link		https://stupidlysimple.github.io/
  */
 
@@ -38,7 +38,7 @@ Router::get('/', 'home');
 | see what happen.
 |
 */
-Router::group('Middleware\Hello@filter', function() {
+Router::group('Middleware\Hello@filter', function () {
     Router::get('/hello', 'hello');
     Router::get('/hello/(:any)', 'Controller\Hello@greetWithName');
     Router::post('/hello', 'Controller\Hello@greetForm');
@@ -54,7 +54,7 @@ Router::group('Middleware\Hello@filter', function() {
 | middleware will intercept the HTTP request if the user is not logged in.
 |
 */
-Router::group('Controller\Auth@check', function() {
+Router::group('Controller\Auth@check', function () {
     Router::get('/admin', 'admin/home');
     Router::post('/updateuser', 'Controller\User@editUser');
     Router::get('/deleteuser', 'Controller\User@deleteUser');
@@ -75,6 +75,6 @@ Router::group('Controller\Auth@check', function() {
 | other route declarations.
 |
 */
-Router::get('/(:any)', function($match) {
-	Viewer::file($match);
+Router::get('/(:any)', function ($match) {
+    Viewer::file($match);
 });
