@@ -6,7 +6,7 @@
 -->
 <html>
 <?php
-$data = [ 'title' => 'StupidlySimple PHP | Service' ];
+$data = ['title' => 'StupidlySimple PHP | Service'];
 Core\Viewer::file('layouts/head.php', $data); ?>
 <body>
 <!-- Wrapper -->
@@ -45,7 +45,7 @@ Core\Viewer::file('layouts/head.php', $data); ?>
                     <code>echo $service->test->calculate(1,'+',2);</code>
                 </p>
                 <p>Output:<br>
-                    <code><?php echo $service->test->calculate(1,'+',2); ?></code>
+                    <code><?php echo $service->test->calculate(1, '+', 2); ?></code>
                 </p>
             </div>
         </div>
