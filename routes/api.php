@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * StupidlySimple - A PHP Framework For Lazy Developers
  *
  * @package		StupidlySimple

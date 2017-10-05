@@ -6,7 +6,7 @@
 -->
 <html>
 <?php
-$data = [ 'title' => 'StupidlySimple | Controller' ];
+$data = ['title' => 'StupidlySimple | Controller'];
 Core\Viewer::file('layouts/head.php', $data); ?>
 <body>
 <!-- Wrapper -->
