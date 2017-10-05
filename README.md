@@ -4,7 +4,7 @@ Follow us on [Facebook](https://www.facebook.com/stupidlysimpleframework).
 
 [![Join the chat at https://gitter.im/stupidlysimpleframework](https://badges.gitter.im/stupidlysimple/php.svg)](https://gitter.im/stupidlysimpleframework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![PHP version](https://badge.fury.io/ph/stupidlysimple%2Fphp.svg)](https://badge.fury.io/ph/stupidlysimple%2Fphp) [![Build](https://api.travis-ci.org/stupidlysimple/php.svg)](https://travis-ci.org/stupidlysimple/php)
+[![PHP version](https://badge.fury.io/ph/stupidlysimple%2Fphp.svg)](https://badge.fury.io/ph/stupidlysimple%2Fphp) [![Build](https://api.travis-ci.org/stupidlysimple/php.svg)](https://travis-ci.org/stupidlysimple/php) [![Build](https://styleci.io/repos/62019007/shield?branch=master)](https://styleci.io/repos/62019007) 
 [![Total Downloads](https://poser.pugx.org/stupidlysimple/php/downloads)](https://packagist.org/packages/stupidlysimple/php)
 [![composer.lock](https://poser.pugx.org/stupidlysimple/php/composerlock)](https://packagist.org/packages/stupidlysimple/php)
 [![License](https://img.shields.io/:license-mit-blue.svg)](https://github.com/stupidlysimple/php/blob/master/LICENSE)
