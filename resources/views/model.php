@@ -6,7 +6,7 @@
 -->
 <html>
 <?php
-$data = [ 'title' => 'StupidlySimple PHP | Service' ];
+$data = ['title' => 'StupidlySimple PHP | Service'];
 Core\Viewer::file('layouts/head.php', $data); ?>
 <body>
 <!-- Wrapper -->
@@ -36,15 +36,15 @@ Core\Viewer::file('layouts/head.php', $data); ?>
                 <p>
                     <?php
                     $i = 1;
-                    foreach(Model\Post::all() as $post){
-                        echo('
+                    foreach (Model\Post::all() as $post) {
+                        echo '
                         <div class="alert alert-info">
                             
                             <b><?= $first_post->'.$post->title.'</b><br>
                             <span><?= $first_post->'.$post->content.'</span>
-                        </div>');
+                        </div>';
                     }
-                    echo 'There are: '. Model\Post::all()->count() . ' posts.';
+                    echo 'There are: '.Model\Post::all()->count().' posts.';
                     ?>
                 </p>
 
