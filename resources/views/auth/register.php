@@ -36,7 +36,7 @@
                     <form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal">
                         <div class="form-group ">
                             <?php
-                            if(Request::get('login_message') !== null){
+                            if (Request::get('login_message') !== null) {
                                 echo('<div class="alert '.Request::get('type').'">
                                         '.Request::get('login_message').'
                                     </div>');

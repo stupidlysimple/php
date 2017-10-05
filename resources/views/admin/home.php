@@ -26,13 +26,13 @@ Core\Viewer::file('../layouts/head.php', $data); ?>
                 <p>A very fresh start for the MVC framework with some basic CRUD functions</p>
 
                 <?php
-                if(Core\Request::get('delete') === 'success'){
+                if (Core\Request::get('delete') === 'success') {
                     echo '<p class="alert alert-success">User successfully deleted</p>';
-                }else if(Core\Request::get('edit') === 'success'){
+                } elseif (Core\Request::get('edit') === 'success') {
                     echo '<p class="alert alert-success">User successfully updated</p>';
-                }else if(Core\Request::get('delete') === 'failed'){
+                } elseif (Core\Request::get('delete') === 'failed') {
                     echo '<p class="alert alert-danger">Failed to delete</p>';
-                }else if(Core\Request::get('edit') === 'failed'){
+                } elseif (Core\Request::get('edit') === 'failed') {
                     echo '<p class="alert alert-danger">Failed to update</p>';
                 }
 
@@ -57,7 +57,7 @@ Core\Viewer::file('../layouts/head.php', $data); ?>
                                 </thead>
                                 <tbody>
                                 <?php
-                                foreach($service->test->getRegisteredUsers() as $user){
+                                foreach ($service->test->getRegisteredUsers() as $user) {
                                     echo '<tr>';
                                     echo '<td>'.$user->first_name.'</td>';
                                     echo '<td>'.$user->last_name.'</td>';
