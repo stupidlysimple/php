@@ -1,52 +1,49 @@
 <?php
 /**
- * StupidlySimple - A PHP Framework For Lazy Developers
+ * StupidlySimple - A PHP Framework For Lazy Developers.
  *
- * @package		StupidlySimple
  * @author		Fariz Luqman <fariz.fnb@gmail.com>
  * @copyright	2017 Fariz Luqman
  * @license		MIT
+ *
  * @link		https://stupidlysimple.github.io/
  */
+
 namespace Controller;
 
-use Sentry;
-use Viewer;
-use Response;
 use Request;
+use Response;
+use Sentry;
 
-class User {
-
+class User
+{
     /**
      * User constructor.
      */
     public function __construct()
     {
         // Always check whether the user is logged in or not to do the action
-        if(Sentry::check() !== true){
+        if (Sentry::check() !== true) {
             Response::redirect('login');
         }
     }
 
-
-    /**
-     *
-     */
-    public function editUser(){
+    public function editUser()
+    {
         $id = Request::get('id');
         $first_name = Request::get('first_name');
         $last_name = Request::get('last_name');
         $password = Request::get('password');
-        try
-        {
-            if($password == ''){
+
+        try {
+            if ($password == '') {
                 // change first_name and last_name
                 $user = \Model\User::find($id);
                 $user->first_name = $first_name;
                 $user->last_name = $last_name;
                 $user->save();
                 Response::redirect('admin?edit=success');
-            }else{
+            } else {
                 // Find the user using the user id
                 $user = Sentry::findUserById($id);
 
@@ -54,11 +51,9 @@ class User {
                 $resetCode = $user->getResetPasswordCode();
 
                 // Check if the reset password code is valid
-                if ($user->checkResetPasswordCode($resetCode))
-                {
+                if ($user->checkResetPasswordCode($resetCode)) {
                     // Attempt to reset the user password
-                    if ($user->attemptResetPassword($resetCode, $password))
-                    {
+                    if ($user->attemptResetPassword($resetCode, $password)) {
                         // change first_name and last_name
                         $user = \Model\User::find($id);
                         $user->first_name = $first_name;
@@ -66,43 +61,33 @@ class User {
                         $user->save();
 
                         Response::redirect('admin?edit=success');
-                    }
-                    else
-                    {
+                    } else {
                         // Password reset failed
                         echo 'Password reset failed';
                     }
-                }
-                else
-                {
+                } else {
                     // The provided password reset code is Invalid
                     echo 'Invalid password reset code';
                 }
             }
-        }
-        catch (\Exception $e)
-        {
+        } catch (\Exception $e) {
             echo 'User was not found.';
         }
     }
 
-    /**
-     *
-     */
     public function deleteUser()
     {
         $id = Request::get('id');
-        try
-        {
+
+        try {
             $user = \Model\User::find($id);
 
-            if($user === null){
+            if ($user === null) {
                 Response::redirect('admin?delete=failed');
             }
 
             $user->delete();
-        }catch(\Exception $e)
-        {
+        } catch (\Exception $e) {
             Response::redirect('admin?delete=failed');
         }
 

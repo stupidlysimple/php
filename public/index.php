@@ -1,11 +1,11 @@
 <?php
 /**
- * StupidlySimple - A PHP Framework For Lazy Developers
+ * StupidlySimple - A PHP Framework For Lazy Developers.
  *
- * @package		StupidlySimple
  * @author		Fariz Luqman <fariz.fnb@gmail.com>
  * @copyright	2017 Fariz Luqman
  * @license		MIT
+ *
  * @link		https://stupidlysimple.github.io/
  */
 
@@ -37,12 +37,12 @@ define('SS_PATH', realpath(dirname(__FILE__).'/../'));
 |--------------------------------------------------------------------------
 |
 | In this file we will register the Autoloader from Composer. Environment
-| variables (that you set on config/env.php) will be registered this time. 
+| variables (that you set on config/env.php) will be registered this time.
 | Our sweet debugging tool will also be loaded to track errors as earlier
 | as possible.
 |
 */
-require_once(SS_PATH.'/app/autoloader.php');
+require_once SS_PATH.'/app/autoloader.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -53,4 +53,4 @@ require_once(SS_PATH.'/app/autoloader.php');
 | manager and routing runs perfectly well.
 |
 */
-require_once(SS_PATH.'/app/bootstrap.php');
+require_once SS_PATH.'/app/bootstrap.php';

@@ -1,11 +1,11 @@
 <?php
 /**
- * StupidlySimple - A PHP Framework For Lazy Developers
+ * StupidlySimple - A PHP Framework For Lazy Developers.
  *
- * @package		StupidlySimple
  * @author		Fariz Luqman <fariz.fnb@gmail.com>
  * @copyright	2017 Fariz Luqman
  * @license		MIT
+ *
  * @link		https://stupidlysimple.github.io/
  */
 
@@ -38,7 +38,7 @@ TimeTrackr::init();
 | maintaining only one instantiation of a class.
 |
 */
-$app = new App;
+$app = new App();
 
 /*
 |--------------------------------------------------------------------------
@@ -103,6 +103,6 @@ Router::dispatch();
 | config/env.php)
 |
 */
-if(getenv('SHOW_EXECUTION_TIME')){
+if (getenv('SHOW_EXECUTION_TIME')) {
     Debugger::exec_time();
 }

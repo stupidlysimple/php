@@ -5,7 +5,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-<?php Core\Viewer::file('../layouts/head', $data = [ 'title' => 'StupidlySimple PHP | Home' ]); ?>
+<?php Core\Viewer::file('../layouts/head', $data = ['title' => 'StupidlySimple PHP | Home']); ?>
 <body>
 <!-- Wrapper -->
 <div id="wrapper">
@@ -22,13 +22,13 @@
                 <p>A very fresh start for the MVC framework with some basic CRUD functions</p>
 
                 <?php
-                if(Core\Request::get('delete') === 'success'){
+                if (Core\Request::get('delete') === 'success') {
                     echo '<p class="alert alert-success">User successfully deleted</p>';
-                }else if(Core\Request::get('edit') === 'success'){
+                } elseif (Core\Request::get('edit') === 'success') {
                     echo '<p class="alert alert-success">User successfully updated</p>';
-                }else if(Core\Request::get('delete') === 'failed'){
+                } elseif (Core\Request::get('delete') === 'failed') {
                     echo '<p class="alert alert-danger">Failed to delete</p>';
-                }else if(Core\Request::get('edit') === 'failed'){
+                } elseif (Core\Request::get('edit') === 'failed') {
                     echo '<p class="alert alert-danger">Failed to update</p>';
                 }
 
@@ -53,7 +53,7 @@
                                 </thead>
                                 <tbody>
                                 <?php
-                                foreach($service->test->getRegisteredUsers() as $user){
+                                foreach ($service->test->getRegisteredUsers() as $user) {
                                     echo '<tr>';
                                     echo '<td>'.$user->first_name.'</td>';
                                     echo '<td>'.$user->last_name.'</td>';
