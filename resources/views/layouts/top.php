@@ -1,5 +1,5 @@
 <!-- Header -->
-<header id="header" class="<?= (isset($is_admin))?('admin'):('') ?>">
+<header id="header" class="<?= (isset($is_admin)) ? ('admin') : ('') ?>">
     <div class="inner">
 
         <!-- Logo -->
