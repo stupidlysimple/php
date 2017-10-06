@@ -2,25 +2,24 @@
 /**
  * StupidlySimple - A PHP Framework For Lazy Developers.
  *
- * @author		Fariz Luqman <fariz.fnb@gmail.com>
- * @copyright	2017 Fariz Luqman
- * @license		MIT
+ * @author        Fariz Luqman <fariz.fnb@gmail.com>
+ * @copyright    2017 Fariz Luqman
+ * @license        MIT
  *
- * @link		https://stupidlysimple.github.io/
+ * @link        https://stupidlysimple.github.io/
  */
 return [
-    'Core\App'                               => 'App',
-    'Core\Cache'                             => 'Cache',
-    'Core\Config'                            => 'Config',
-    'Core\Database'                          => 'Database',
-    'Core\Debugger'                          => 'Debugger',
-    'Core\Router'                            => 'Router',
-    'Core\Request'                           => 'Request',
-    'Core\Response'                          => 'Response',
-    'Core\Sharer'                            => 'Sharer',
-    'Core\Viewer'                            => 'Viewer',
-    'Core\Service'                           => 'Service',
-    'Core\Service\ServiceContainer'          => 'ServiceContainer',
-    'Core\TimeTrackr'                        => 'TimeTrackr',
+    'Simplyfier\Cache' => 'Cache',
+    'Simplyfier\Config' => 'Config',
+    'Simplyfier\Database' => 'Database',
+    'Simplyfier\Debugger' => 'Debugger',
+    'Simplyfier\Http\Router' => 'Router',
+    'Simplyfier\Http\Request' => 'Request',
+    'Simplyfier\Http\Response' => 'Response',
+    'Simplyfier\DI\Sharer' => 'Sharer',
+    'Simplyfier\Viewer' => 'Viewer',
+    'Simplyfier\Service' => 'Service',
+    'Simplyfier\Service\ServiceContainer' => 'ServiceContainer',
+    'Simplyfier\TimeTrackr' => 'TimeTrackr',
     'Cartalyst\Sentry\Facades\Native\Sentry' => 'Sentry',
 ];

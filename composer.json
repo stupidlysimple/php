@@ -34,7 +34,21 @@
   },
   "autoload": {
     "psr-4": {
-      "Core\\": "app/Core"
+      "Simplyfier\\": [
+        "vendor/simplyfier/alias",
+        "vendor/simplyfier/config",
+        "vendor/simplyfier/database",
+        "vendor/simplyfier/timetrackr",
+        "vendor/simplyfier/debugger",
+        "vendor/simplyfier/service",
+        "vendor/simplyfier/viewer",
+        "vendor/simplyfier/cache"
+      ],
+      "Simplyfier\\Database\\Factories\\": "vendor/simplyfier/database/factories",
+      "Simplyfier\\Cache\\Factories\\": "vendor/simplyfier/cache/factories",
+      "Simplyfier\\Debugger\\Providers\\": "vendor/simplyfier/debugger/providers",
+      "Simplyfier\\DI\\": "vendor/simplyfier/di",
+      "Simplyfier\\Http\\": "vendor/simplyfier/http"
     },
     "classmap": [
       "app/Model",

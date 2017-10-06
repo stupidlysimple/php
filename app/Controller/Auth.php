@@ -11,9 +11,9 @@
 
 namespace Controller;
 
-use Request;
-use Response;
-use Sentry;
+use Simplyfier\Http\Request;
+use Simplyfier\Http\Response;
+use Cartalyst\Sentry\Facades\Native\Sentry;
 
 /**
  * Class Auth.

@@ -30,7 +30,7 @@ require __DIR__.'/../vendor/autoload.php';
 | function everywhere in the project.
 |
 */
-Core\Config::setEnv();
+Simplyfier\Config::setEnv();
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +41,4 @@ Core\Config::setEnv();
 | configuration (located at config/env.php).
 |
 */
-Core\Debugger::start();
+Simplyfier\Debugger::start();

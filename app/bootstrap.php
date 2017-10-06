@@ -9,6 +9,16 @@
  * @link		https://stupidlysimple.github.io/
  */
 
+use Simplyfier\Alias;
+use Simplyfier\Cache;
+use Simplyfier\TimeTrackr;
+use Simplyfier\Database;
+use Simplyfier\DI\Container;
+use Simplyfier\DI\Sharer;
+use Simplyfier\Debugger;
+use Simplyfier\Service;
+use Simplyfier\Http\Router;
+
 /*
 |--------------------------------------------------------------------------
 | Setup Aliases
@@ -17,7 +27,7 @@
 | Reads the configuration file (config/aliases.php) and create aliases
 |
 */
-Core\Alias::init();
+Alias::loadAliases();
 
 /*
 |--------------------------------------------------------------------------
@@ -27,18 +37,19 @@ Core\Alias::init();
 | Reads the configuration file (config/datetime.php) and set timezone
 |
 */
-TimeTrackr::init();
+TimeTrackr::applyConfig();
 
 /*
 |--------------------------------------------------------------------------
-| Creating the Singleton
+| Creating the App Container
 |--------------------------------------------------------------------------
 |
-| Damn Stupid Simple uses the Singleton to simplify coordination, while
-| maintaining only one instantiation of a class.
+| Create an app container to simplify coordination, while maintaining only
+| one instantiation of a class. The app container is usable inside view
+| files.
 |
 */
-$app = new App();
+$app = new Container();
 
 /*
 |--------------------------------------------------------------------------
@@ -48,7 +59,7 @@ $app = new App();
 | Connect the database for only once. Save the planet.
 |
 */
-$app->link('database', Database::connect());
+$app->put('database', Database::connect());
 
 /*
 |--------------------------------------------------------------------------
@@ -59,7 +70,7 @@ $app->link('database', Database::connect());
 | capabilities.
 |
 */
-$app->link('cachemanager', Cache::init());
+$app->put('cachemanager', Cache::initialize());
 
 /*
 |--------------------------------------------------------------------------
@@ -72,11 +83,11 @@ $app->link('cachemanager', Cache::init());
 $service = Service::loadServices();
 /*
 |--------------------------------------------------------------------------
-| Share the Singleton $app and $service
+| Store $app and $service into a hive accessible in the view files
 |--------------------------------------------------------------------------
 |
-| Eliminate complexity, get the job done. Our Dependency Injection (DI) is
-| here!
+| Eliminate complexity, get the job done. Our Dependency Injection (DI) for
+| the view files in here!
 |
 */
 Sharer::share('app', $app);

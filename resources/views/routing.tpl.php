@@ -7,7 +7,7 @@
 <html>
 <?php
 $data = ['title' => 'StupidlySimple PHP | Service'];
-Core\Viewer::file('layouts/head', $data);
+Viewer::file('layouts/head', $data);
 ?>
 <body>
 <!-- Wrapper -->

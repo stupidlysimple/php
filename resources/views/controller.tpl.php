@@ -7,7 +7,7 @@
 <html>
 <?php
 $data = ['title' => 'StupidlySimple | Controller'];
-Core\Viewer::file('layouts/head', $data); ?>
+Viewer::file('layouts/head', $data); ?>
 <body>
 <!-- Wrapper -->
 <div id="wrapper">
