@@ -9,7 +9,7 @@
  * @link        https://stupidlysimple.github.io/
  */
 return [
-    'enabled' => true,
+    'enabled'  => true,
     'settings' => [
         /*
          * Default storage
@@ -22,7 +22,7 @@ return [
          * Use full PATH like /home/username/cache
          * Keep it blank '', it will automatic setup for you
          */
-        'path' => '', // default path for files
+        'path'        => '', // default path for files
         'securityKey' => '', // default will good. It will create a path by PATH/securityKey
 
         /*
@@ -50,18 +50,18 @@ return [
         ],
 
         'redis' => [
-            'host' => '127.0.0.1',
-            'port' => '6379',
+            'host'     => '127.0.0.1',
+            'port'     => '6379',
             'password' => '',
             'database' => '',
-            'timeout' => '',
+            'timeout'  => '',
         ],
 
         'ssdb' => [
-            'host' => '127.0.0.1',
-            'port' => 8888,
+            'host'     => '127.0.0.1',
+            'port'     => 8888,
             'password' => '',
-            'timeout' => '',
+            'timeout'  => '',
         ],
 
         /*
