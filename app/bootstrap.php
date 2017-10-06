@@ -8,16 +8,15 @@
  *
  * @link		https://stupidlysimple.github.io/
  */
-
 use Simplyfier\Alias;
 use Simplyfier\Cache;
-use Simplyfier\TimeTrackr;
 use Simplyfier\Database;
+use Simplyfier\Debugger;
 use Simplyfier\DI\Container;
 use Simplyfier\DI\Sharer;
-use Simplyfier\Debugger;
-use Simplyfier\Service;
 use Simplyfier\Http\Router;
+use Simplyfier\Service;
+use Simplyfier\TimeTrackr;
 
 /*
 |--------------------------------------------------------------------------
