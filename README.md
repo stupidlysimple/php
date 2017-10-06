@@ -2,7 +2,7 @@
 
 Follow us on [Facebook](https://www.facebook.com/stupidlysimpleframework).
 
-[![PHP version](https://badge.fury.io/ph/stupidlysimple%2Fphp.svg)](https://badge.fury.io/ph/stupidlysimple%2Fphp) [![Join the chat at https://gitter.im/stupidlysimpleframework](https://badges.gitter.im/stupidlysimple/php.svg)](https://gitter.im/stupidlysimpleframework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) . 
+[![PHP version](https://badge.fury.io/ph/stupidlysimple%2Fphp.svg)](https://badge.fury.io/ph/stupidlysimple%2Fphp) [![Join the chat at https://gitter.im/stupidlysimpleframework](https://badges.gitter.im/stupidlysimple/php.svg)](https://gitter.im/stupidlysimpleframework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
 
 [![Build](https://api.travis-ci.org/stupidlysimple/php.svg)](https://travis-ci.org/stupidlysimple/php) [![Style-CI](https://styleci.io/repos/62019007/shield?branch=master)](https://styleci.io/repos/62019007)  [![Scrutinizer-CI](https://scrutinizer-ci.com/g/stupidlysimple/php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/stupidlysimple/php/)  [![Total Downloads](https://poser.pugx.org/stupidlysimple/php/downloads)](https://packagist.org/packages/stupidlysimple/php)
 [![composer.lock](https://poser.pugx.org/stupidlysimple/php/composerlock)](https://packagist.org/packages/stupidlysimple/php)
