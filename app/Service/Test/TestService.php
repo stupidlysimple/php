@@ -15,8 +15,7 @@ use Model\User;
 use Simplyfier\Service\ServiceContainer;
 
 /**
- * Class TestService
- * @package Service\Test
+ * Class TestService.
  */
 class TestService extends ServiceContainer
 {
@@ -32,6 +31,7 @@ class TestService extends ServiceContainer
      * @param $var1
      * @param $operation
      * @param $var2
+     *
      * @return float|int|string
      */
     public function calculate($var1, $operation, $var2)
