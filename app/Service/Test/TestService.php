@@ -11,15 +11,29 @@
 
 namespace Service\Test;
 
-use ServiceContainer;
+use Model\User;
+use Simplyfier\Service\ServiceContainer;
 
+/**
+ * Class TestService
+ * @package Service\Test
+ */
 class TestService extends ServiceContainer
 {
+    /**
+     * @return string
+     */
     public function hello()
     {
         return 'Hello';
     }
 
+    /**
+     * @param $var1
+     * @param $operation
+     * @param $var2
+     * @return float|int|string
+     */
     public function calculate($var1, $operation, $var2)
     {
         if ($operation == 'plus' || $operation == '+') {
@@ -35,8 +49,11 @@ class TestService extends ServiceContainer
         }
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
     public function getRegisteredUsers()
     {
-        return \Model\User::all();
+        return User::all();
     }
 }
