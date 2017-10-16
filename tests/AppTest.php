@@ -1,29 +1,27 @@
 <?php
 /**
- * StupidlySimple - A PHP Framework For Lazy Developers
+ * StupidlySimple - A PHP Framework For Lazy Developers.
  *
- * @package        StupidlySimple
  * @author        Fariz Luqman <fariz.fnb@gmail.com>
  * @copyright    2017 Fariz Luqman
  * @license        MIT
+ *
  * @link        https://stupidlysimple.github.io/
  */
 
 /**
- * PHP Unit Testing
+ * PHP Unit Testing.
  */
-
 use PHPUnit\Framework\TestCase;
-
+use Simplyfier\Cache;
+use Simplyfier\Database;
 use Simplyfier\DI\Container;
 use Simplyfier\DI\Sharer;
-use Simplyfier\Database;
-use Simplyfier\Cache;
 use Simplyfier\Service;
 use Simplyfier\TimeTrackr;
 
 /**
- * Class AppTest
+ * Class AppTest.
  */
 class AppTest extends TestCase
 {
@@ -34,37 +32,39 @@ class AppTest extends TestCase
     {
         try {
             echo "\n";
-            echo "Creating a new container...";
-            $app = new Container;
+            echo 'Creating a new container...';
+            $app = new Container();
             self::displayOK();
 
-            echo "Load TimeTrackr config...";
+            echo 'Load TimeTrackr config...';
             TimeTrackr::applyConfig();
             self::displayOK();
 
-            echo "Connecting to the database...";
+            echo 'Connecting to the database...';
             Database::loadConfig();
             $app->put('database', Database::getInstance());
             self::displayOK();
 
-            echo "Instantiate cachemanager... ";
+            echo 'Instantiate cachemanager... ';
             Cache::loadConfig();
             $app->put('cachemanager', Cache::getInstance());
             self::displayOK();
 
-            echo "Instantiate service manager and load all services...";
+            echo 'Instantiate service manager and load all services...';
             $app->put('service', Service::loadServices());
             self::displayOK();
 
-            echo "Sharing the app...";
+            echo 'Sharing the app...';
             Sharer::share('app', $app);
             self::displayOK();
         } catch (\Exception $exception) {
             self::displayFailed();
             static::assertTrue(false);
+
             return 'first';
         }
         static::assertTrue(true);
+
         return 'first';
     }
 
