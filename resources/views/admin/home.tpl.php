@@ -22,13 +22,13 @@
                 <p>A very fresh start for the MVC framework with some basic CRUD functions</p>
 
                 <?php
-                if (Core\Request::get('delete') === 'success') {
+                if (Request::get('delete') === 'success') {
                     echo '<p class="alert alert-success">User successfully deleted</p>';
-                } elseif (Core\Request::get('edit') === 'success') {
+                } elseif (Request::get('edit') === 'success') {
                     echo '<p class="alert alert-success">User successfully updated</p>';
-                } elseif (Core\Request::get('delete') === 'failed') {
+                } elseif (Request::get('delete') === 'failed') {
                     echo '<p class="alert alert-danger">Failed to delete</p>';
-                } elseif (Core\Request::get('edit') === 'failed') {
+                } elseif (Request::get('edit') === 'failed') {
                     echo '<p class="alert alert-danger">Failed to update</p>';
                 }
 

@@ -29,6 +29,17 @@ Viewer::file('layouts/head', $data);
 
             </header>
             <section class="tiles">
+                <article class="">
+                    <span class="image">
+                        <img src="resources/assets/images/pic5.jpg" alt=""/>
+                    </span>
+                    <a href="directory">
+                        <h2>Directory Structure</h2>
+                        <div class="content">
+                            <p>See the directory structure of the StupidlySimple PHP framework</p>
+                        </div>
+                    </a>
+                </article>
                 <article class="style1">
                     <span class="image">
                         <img src="resources/assets/images/pic1.jpg" alt=""/>
@@ -71,17 +82,6 @@ Viewer::file('layouts/head', $data);
                         <h2>Models</h2>
                         <div class="content">
                             <p>Provides easy access to your data. Models are powered by <code>Eloquent ORM</code></p>
-                        </div>
-                    </a>
-                </article>
-                <article class="">
-                    <span class="image">
-                        <img src="resources/assets/images/pic5.jpg" alt=""/>
-                    </span>
-                    <a href="directory_structure">
-                        <h2>Directory Structure</h2>
-                        <div class="content">
-                            <p>See the directory structure of the StupidlySimple PHP framework</p>
                         </div>
                     </a>
                 </article>

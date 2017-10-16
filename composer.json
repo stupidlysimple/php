@@ -37,7 +37,8 @@
     "simplyfier/timetrackr": "dev-master",
     "simplyfier/viewer": "dev-master",
     "simplyfier/database": "dev-master",
-    "simplyfier/service": "dev-master"
+    "simplyfier/service": "dev-master",
+    "zircote/swagger-php": "^2.0"
   },
   "require-dev": {
     "phpunit/phpunit": "5.4.*"

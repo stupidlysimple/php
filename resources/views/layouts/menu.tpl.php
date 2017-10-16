@@ -3,6 +3,7 @@
     <h2>Menu</h2>
     <ul>
         <li><a href="home">Home</a></li>
+        <li><a href="directory">Directory Structure</a></li>
         <li><a href="routing">Routing</a></li>
         <li><a href="controller">Controllers</a></li>
         <li><a href="service">Services</a></li>
@@ -13,6 +14,7 @@
             echo '<li><a href="logout">Logout </a></li>';
         } else {
             echo '<li><a href="login">Login</a></li>';
-        }?>
+        }
+        ?>
     </ul>
 </nav>
