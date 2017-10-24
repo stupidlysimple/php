@@ -11,6 +11,7 @@
 
 namespace Controller;
 
+use Cartalyst\Sentry\Users;
 use Cartalyst\Sentry\Facades\Native\Sentry;
 use Simplyfier\Http\Request;
 use Simplyfier\Http\Response;
@@ -40,27 +41,27 @@ class Auth
 
             // Authenticate the user
             $user = Sentry::authenticate($credentials, false);
-        } catch (\Cartalyst\Sentry\Users\LoginRequiredException $e) {
+        } catch (Users\LoginRequiredException $e) {
             Response::redirect('login')->with([
                 'login_message'=> 'Login credentials not supplied',
                 'type'         => 'alert-danger',
             ]);
-        } catch (\Cartalyst\Sentry\Users\PasswordRequiredException $e) {
+        } catch (Users\PasswordRequiredException $e) {
             Response::redirect('login')->with([
                 'login_message'=> 'Password field is required',
                 'type'         => 'alert-danger',
             ]);
-        } catch (\Cartalyst\Sentry\Users\WrongPasswordException $e) {
+        } catch (Users\WrongPasswordException $e) {
             Response::redirect('login')->with([
                 'login_message'=> 'Wrong password, try again.',
                 'type'         => 'alert-danger',
             ]);
-        } catch (\Cartalyst\Sentry\Users\UserNotFoundException $e) {
+        } catch (Users\UserNotFoundException $e) {
             Response::redirect('login')->with([
                 'login_message'=> 'User not found.',
                 'type'         => 'alert-danger',
             ]);
-        } catch (\Cartalyst\Sentry\Users\UserNotActivatedException $e) {
+        } catch (Users\UserNotActivatedException $e) {
             Response::redirect('login')->with([
                 'login_message'=> 'User is not activated.',
                 'type'         => 'alert-danger',
@@ -89,22 +90,26 @@ class Auth
                 'first_name' => Request::get('first_name'),
                 'last_name'  => Request::get('last_name'),
             ], $activate = true);
-        } catch (\Cartalyst\Sentry\Users\LoginRequiredException $e) {
+        } catch (Users\LoginRequiredException $e) {
             Response::redirect('register')->with([
                 'login_message'=> 'Login credentials not supplied',
                 'type'         => 'alert-danger',
             ]);
-        } catch (\Cartalyst\Sentry\Users\PasswordRequiredException $e) {
+        } catch (Users\PasswordRequiredException $e) {
             Response::redirect('register')->with([
                 'login_message'=> 'Password field is required',
                 'type'         => 'alert-danger',
             ]);
-        } catch (\Cartalyst\Sentry\Users\UserExistsException $e) {
+        } catch (Users\UserExistsException $e) {
             Response::redirect('register')->with([
                 'login_message'=> 'User with that login already exist.',
                 'type'         => 'alert-danger',
             ]);
         } catch (\Exception $e) {
+            Response::redirect('register')->with([
+                'login_message'=> 'Login is not successful.',
+                'type'         => 'alert-danger',
+            ]);
         } finally {
             if ($user) {
                 Response::redirect('login')->with([

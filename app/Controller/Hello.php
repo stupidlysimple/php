@@ -11,7 +11,7 @@
 
 namespace Controller;
 
-use Core\Request;
+use Simplyfier\Http\Request;
 
 class Hello
 {

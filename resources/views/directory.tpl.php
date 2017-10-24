@@ -6,7 +6,7 @@
 -->
 <html>
 <?php
-$data = ['title' => 'StupidlySimple PHP | Service'];
+$data = ['title' => 'StupidlySimple PHP | Directory'];
 Viewer::file('layouts/head', $data);
 ?>
 <body>
