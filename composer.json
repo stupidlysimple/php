@@ -20,7 +20,7 @@
   "config": {
     "vendor-dir": "vendor",
     "platform": {
-      "php": "5.6.19"
+      "php": "5.6"
     }
   },
   "minimum-stability": "dev",
