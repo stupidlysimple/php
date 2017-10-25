@@ -10,7 +10,7 @@
  */
 return
 [
-    /**
+    /*
      * Set the running environment
      * development - The system is running development mode
      * production - The system is running in production mode

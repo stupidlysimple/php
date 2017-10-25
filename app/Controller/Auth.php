@@ -11,8 +11,8 @@
 
 namespace Controller;
 
-use Cartalyst\Sentry\Users;
 use Cartalyst\Sentry\Facades\Native\Sentry;
+use Cartalyst\Sentry\Users;
 use Simplyfier\Http\Request;
 use Simplyfier\Http\Response;
 
