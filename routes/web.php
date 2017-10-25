@@ -8,7 +8,6 @@
  *
  * @link        https://stupidlysimple.github.io/
  */
-
 use Simplyfier\Http\Router;
 use Simplyfier\Viewer;
 
