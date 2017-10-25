@@ -18,7 +18,10 @@
     }
   ],
   "config": {
-    "vendor-dir": "vendor"
+    "vendor-dir": "vendor",
+    "platform": {
+      "php": "5.6.19"
+    }
   },
   "minimum-stability": "dev",
   "require": {
