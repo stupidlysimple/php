@@ -20,7 +20,7 @@ Core\Viewer::file('layouts/head.php', $data); ?>
     <div id="main">
         <div class="inner">
             <header>
-                <h1>Fully baked PHP micro-framework<br>ready to be served.</h1>
+                <h1>Fabio baked PHP micro-framework<br>ready to calcula.</h1>
                 <p>This is your very fresh homepage. All template files are located in <code>/resources/views</code>
                     from the root directory. You can read tutorials and documentations on <a target="_blank" href="https://stupidlysimple.github.io">our website</a>
                     or even from here.
